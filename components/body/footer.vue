@@ -1,7 +1,7 @@
 <template>
     <div class="relative">
         <div class="bg-yellow-500 p-6 w-full flex justify-center items-center">
-            <p class="font-medium leading-7 text-justify tracking-tight">
+            <p class="font-medium leading-7 text-justify tracking-tight max-w-5xl">
                 آیوفیلم یکی از متفاوت ترین رسانه های سرگرمی کشور در زمینه فیلم ، انیمه و سریال است که با ایده ای نوین و طیف وسیع موضوعات مطالب سعی در ارائه هر گونه محتوا برای مخاطبان خود دارد. انواع فیلم خارجی ، انیمه ژاپنی ، سریال کره ای و سریال ترکی به صورت اختصاصی ، لینک های دانلود رایگان با کیفیت عالی ، نسخه زبان اصلی و همچنین جستجوی زیر نویس فارسی هر فیلم ، سریال و انیمه را می توانید در آیوفیلم انجام دهید.
             </p>
         </div>
