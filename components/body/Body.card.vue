@@ -12,7 +12,7 @@
                     <!-- box -->
                     <div class="md:w-[162vh] w-96 h-fit p-4 absolute mt-16 md:mr-8 rounded">
                         <div class="flex flex-row gap-3 overflow-auto">
-                            <a href="#" class="flex flex-col relative">
+                            <NuxtLink href="#" class="flex flex-col relative">
                                 <img class="max-w-sm h-60 md:h-80 rounded-lg object-cover object-center" src="../../public/The-Northman.jpg" alt="avatar">
                                 <div class="bg-white rounded-b absolute px-1 left-5 bg-opacity-60">
                                     <span class="text-sm font-normal">17+</span>
@@ -23,8 +23,8 @@
                                 <div class="bg-white rounded-md px-1 absolute bottom-2 right-2 bg-opacity-60">
                                     <span class="text-xs font-medium">سافت ساب</span>
                                 </div>
-                            </a>
-                            <a href="#" class="flex flex-col relative">
+                            </NuxtLink>
+                            <NuxtLink href="#" class="flex flex-col relative">
                                 <img class="max-w-sm h-60 md:h-80 rounded-lg object-cover object-center" src="../../public/The-Northman.jpg" alt="avatar">
                                 <div class="bg-white rounded-b absolute px-1 left-5 bg-opacity-60">
                                     <span class="text-sm font-normal">17+</span>
@@ -35,8 +35,8 @@
                                 <div class="bg-white rounded-md px-1 absolute bottom-2 right-2 bg-opacity-60">
                                     <span class="text-xs font-medium">سافت ساب</span>
                                 </div>
-                            </a>
-                            <a href="#" class="flex flex-col relative">
+                            </NuxtLink>
+                            <NuxtLink href="#" class="flex flex-col relative">
                                 <img class="max-w-sm h-60 md:h-80 rounded-lg object-cover object-center" src="../../public/The-Northman.jpg" alt="avatar">
                                 <div class="bg-white rounded-b absolute px-1 left-5 bg-opacity-60">
                                     <span class="text-sm font-normal">17+</span>
@@ -47,8 +47,8 @@
                                 <div class="bg-white rounded-md px-1 absolute bottom-2 right-2 bg-opacity-60">
                                     <span class="text-xs font-medium">سافت ساب</span>
                                 </div>
-                            </a>
-                            <a href="#" class="flex flex-col relative">
+                            </NuxtLink>
+                            <NuxtLink href="#" class="flex flex-col relative">
                                 <img class="max-w-sm h-60 md:h-80 rounded-lg object-cover object-center" src="../../public/The-Northman.jpg" alt="avatar">
                                 <div class="bg-white rounded-b absolute px-1 left-5 bg-opacity-60">
                                     <span class="text-sm font-normal">17+</span>
@@ -59,8 +59,8 @@
                                 <div class="bg-white rounded-md px-1 absolute bottom-2 right-2 bg-opacity-60">
                                     <span class="text-xs font-medium">سافت ساب</span>
                                 </div>
-                            </a>
-                            <a href="#" class="flex flex-col relative">
+                            </NuxtLink>
+                            <NuxtLink href="#" class="flex flex-col relative">
                                 <img class="max-w-sm h-60 md:h-80 rounded-lg object-cover object-center" src="../../public/The-Northman.jpg" alt="avatar">
                                 <div class="bg-white rounded-b absolute px-1 left-5 bg-opacity-60">
                                     <span class="text-sm font-normal">17+</span>
@@ -71,8 +71,8 @@
                                 <div class="bg-white rounded-md px-1 absolute bottom-2 right-2 bg-opacity-60">
                                     <span class="text-xs font-medium">سافت ساب</span>
                                 </div>
-                            </a>
-                            <a href="#" class="flex flex-col relative">
+                            </NuxtLink>
+                            <NuxtLink href="#" class="flex flex-col relative">
                                 <img class="max-w-sm h-60 md:h-80 rounded-lg object-cover object-center" src="../../public/The-Northman.jpg" alt="avatar">
                                 <div class="bg-white rounded-b absolute px-1 left-5 bg-opacity-60">
                                     <span class="text-sm font-normal">17+</span>
@@ -83,8 +83,8 @@
                                 <div class="bg-white rounded-md px-1 absolute bottom-2 right-2 bg-opacity-60">
                                     <span class="text-xs font-medium">سافت ساب</span>
                                 </div>
-                            </a>
-                            <a href="#" class="flex flex-col relative">
+                            </NuxtLink>
+                            <NuxtLink href="#" class="flex flex-col relative">
                                 <img class="max-w-sm h-60 md:h-80 rounded-lg object-cover object-center" src="../../public/The-Northman.jpg" alt="avatar">
                                 <div class="bg-white rounded-b absolute px-1 left-5 bg-opacity-60">
                                     <span class="text-sm font-normal">17+</span>
@@ -95,8 +95,8 @@
                                 <div class="bg-white rounded-md px-1 absolute bottom-2 right-2 bg-opacity-60">
                                     <span class="text-xs font-medium">سافت ساب</span>
                                 </div>
-                            </a>
-                            <a href="#" class="flex flex-col relative">
+                            </NuxtLink>
+                            <NuxtLink href="#" class="flex flex-col relative">
                                 <img class="max-w-sm h-60 md:h-80 rounded-lg object-cover object-center" src="../../public/The-Northman.jpg" alt="avatar">
                                 <div class="bg-white rounded-b absolute px-1 left-5 bg-opacity-60">
                                     <span class="text-sm font-normal">17+</span>
@@ -107,8 +107,8 @@
                                 <div class="bg-white rounded-md px-1 absolute bottom-2 right-2 bg-opacity-60">
                                     <span class="text-xs font-medium">سافت ساب</span>
                                 </div>
-                            </a>
-                            <a href="#" class="flex flex-col relative">
+                            </NuxtLink>
+                            <NuxtLink href="#" class="flex flex-col relative">
                                 <img class="max-w-sm h-60 md:h-80 rounded-lg object-cover object-center" src="../../public/The-Northman.jpg" alt="avatar">
                                 <div class="bg-white rounded-b absolute px-1 left-5 bg-opacity-60">
                                     <span class="text-sm font-normal">17+</span>
@@ -119,8 +119,8 @@
                                 <div class="bg-white rounded-md px-1 absolute bottom-2 right-2 bg-opacity-60">
                                     <span class="text-xs font-medium">سافت ساب</span>
                                 </div>
-                            </a>
-                            <a href="#" class="flex flex-col relative">
+                            </NuxtLink>
+                            <NuxtLink href="#" class="flex flex-col relative">
                                 <img class="max-w-sm h-60 md:h-80 rounded-lg object-cover object-center" src="../../public/The-Northman.jpg" alt="avatar">
                                 <div class="bg-white rounded-b absolute px-1 left-5 bg-opacity-60">
                                     <span class="text-sm font-normal">17+</span>
@@ -131,8 +131,8 @@
                                 <div class="bg-white rounded-md px-1 absolute bottom-2 right-2 bg-opacity-60">
                                     <span class="text-xs font-medium">سافت ساب</span>
                                 </div>
-                            </a>
-                            <a href="#" class="flex flex-col relative">
+                            </NuxtLink>
+                            <NuxtLink href="#" class="flex flex-col relative">
                                 <img class="max-w-sm h-60 md:h-80 rounded-lg object-cover object-center" src="../../public/The-Northman.jpg" alt="avatar">
                                 <div class="bg-white rounded-b absolute px-1 left-5 bg-opacity-60">
                                     <span class="text-sm font-normal">17+</span>
@@ -143,8 +143,8 @@
                                 <div class="bg-white rounded-md px-1 absolute bottom-2 right-2 bg-opacity-60">
                                     <span class="text-xs font-medium">سافت ساب</span>
                                 </div>
-                            </a>
-                            <a href="#" class="flex flex-col relative">
+                            </NuxtLink>
+                            <NuxtLink href="#" class="flex flex-col relative">
                                 <img class="max-w-sm h-60 md:h-80 rounded-lg object-cover object-center" src="../../public/The-Northman.jpg" alt="avatar">
                                 <div class="bg-white rounded-b absolute px-1 left-5 bg-opacity-60">
                                     <span class="text-sm font-normal">17+</span>
@@ -155,8 +155,8 @@
                                 <div class="bg-white rounded-md px-1 absolute bottom-2 right-2 bg-opacity-60">
                                     <span class="text-xs font-medium">سافت ساب</span>
                                 </div>
-                            </a>
-                            <a href="#" class="flex flex-col relative">
+                            </NuxtLink>
+                            <NuxtLink href="#" class="flex flex-col relative">
                                 <img class="max-w-sm h-60 md:h-80 rounded-lg object-cover object-center" src="../../public/The-Northman.jpg" alt="avatar">
                                 <div class="bg-white rounded-b absolute px-1 left-5 bg-opacity-60">
                                     <span class="text-sm font-normal">17+</span>
@@ -167,8 +167,8 @@
                                 <div class="bg-white rounded-md px-1 absolute bottom-2 right-2 bg-opacity-60">
                                     <span class="text-xs font-medium">سافت ساب</span>
                                 </div>
-                            </a>
-                            <a href="#" class="flex flex-col relative">
+                            </NuxtLink>
+                            <NuxtLink href="#" class="flex flex-col relative">
                                 <img class="max-w-sm h-60 md:h-80 rounded-lg object-cover object-center" src="../../public/The-Northman.jpg" alt="avatar">
                                 <div class="bg-white rounded-b absolute px-1 left-5 bg-opacity-60">
                                     <span class="text-sm font-normal">17+</span>
@@ -179,8 +179,8 @@
                                 <div class="bg-white rounded-md px-1 absolute bottom-2 right-2 bg-opacity-60">
                                     <span class="text-xs font-medium">سافت ساب</span>
                                 </div>
-                            </a>
-                            <a href="#" class="flex flex-col relative">
+                            </NuxtLink>
+                            <NuxtLink href="#" class="flex flex-col relative">
                                 <img class="max-w-sm h-60 md:h-80 rounded-lg object-cover object-center" src="../../public/The-Northman.jpg" alt="avatar">
                                 <div class="bg-white rounded-b absolute px-1 left-5 bg-opacity-60">
                                     <span class="text-sm font-normal">17+</span>
@@ -191,7 +191,7 @@
                                 <div class="bg-white rounded-md px-1 absolute bottom-2 right-2 bg-opacity-60">
                                     <span class="text-xs font-medium">سافت ساب</span>
                                 </div>
-                            </a>
+                            </NuxtLink>
                         </div>
                     </div>
                     <!-- box -->
