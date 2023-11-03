@@ -39,10 +39,10 @@ export default {
             <div class="flex items-center bg-gray-700 px-2 py-1 rounded-lg">
                 <div v-show="!menuMobile" class="absolute m-0 -top-[280px] text-white bg-gray-800 rounded-lg p-4 w-56 h-auto ps-5">
                     <ul class="text-2xl font-medium space-y-9">
-                        <li class="block hover:bg-gray-700 hover:translate-y-1 hover:rounded hover:px-3 hover:py-2 hover:shadow-md hover:shadow-indigo-600 duration-300 delay-200"><NuxtLink to="">انیمه</NuxtLink></li>
-                        <li class="block hover:bg-gray-700 hover:translate-y-1 hover:rounded hover:px-3 hover:py-2 hover:shadow-md hover:shadow-indigo-600 duration-300 delay-200"><NuxtLink to="">کره ای</NuxtLink></li>
-                        <li class="block hover:bg-gray-700 hover:translate-y-1 hover:rounded hover:px-3 hover:py-2 hover:shadow-md hover:shadow-indigo-600 duration-300 delay-200"><NuxtLink to="">ترکی</NuxtLink></li>
-                        <li class="block hover:bg-gray-700 hover:translate-y-1 hover:rounded hover:px-3 hover:py-2 hover:shadow-md hover:shadow-indigo-600 duration-300 delay-200"><NuxtLink to="">خارجی</NuxtLink></li>
+                        <li class="block hover:bg-gray-700 hover:translate-y-1 hover:rounded hover:px-3 hover:py-2 hover:shadow-md hover:shadow-indigo-600 duration-300 delay-200"><NuxtLink to="#">انیمه</NuxtLink></li>
+                        <li class="block hover:bg-gray-700 hover:translate-y-1 hover:rounded hover:px-3 hover:py-2 hover:shadow-md hover:shadow-indigo-600 duration-300 delay-200"><NuxtLink to="#">کره ای</NuxtLink></li>
+                        <li class="block hover:bg-gray-700 hover:translate-y-1 hover:rounded hover:px-3 hover:py-2 hover:shadow-md hover:shadow-indigo-600 duration-300 delay-200"><NuxtLink to="#">ترکی</NuxtLink></li>
+                        <li class="block hover:bg-gray-700 hover:translate-y-1 hover:rounded hover:px-3 hover:py-2 hover:shadow-md hover:shadow-indigo-600 duration-300 delay-200"><NuxtLink to="#">خارجی</NuxtLink></li>
                     </ul>
                 </div>
                 <div v-if="menuMobile" @click="clickMenuMobile">
@@ -57,25 +57,26 @@ export default {
                 </div> 
             </div>
             <!-- search -->
-            <div class="flex items-center bg-gray-700 px-2 py-1 rounded-lg">
+            <div class="flex items-center justify-center bg-gray-700 px-2 py-1 rounded-lg relative">
                 <div @click="SearchInput">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"        stroke="currentColor" class="w-8 text-white">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
                     </svg>
                 </div>
-                <form method="get" v-show="!SearchBox" class="bg-black/70 h-screen absolute -top-96 -inset-1 -z-50 -mt-12 flex justify-center items-center overflow-hidden">
-                    <input type="search" name="q" placeholder="جستجوی سریع..." class="py-3 px-3 rounded-md bg-gray-700 text-gray-300 focus:text-base outline-none text-base font-medium w-96 -mt-20">
-                </form>
+                <div class="bg-black/70 absolute h-screen ml-24 mr-1 -bottom-3 w-screen -z-50 flex justify-center items-center" v-show="!SearchBox">
+                    <form method="get" class="inline-block">
+                    <input type="search" name="q" placeholder="جستجوی سریع..." class="block py-3 px-3 rounded-md bg-gray-700 text-gray-300 focus:text-base outline-none text-base font-medium w-96">
+                    </form>
+                </div>
             </div>
             <!-- login -->
             <div class="flex items-center bg-gray-700 px-2 py-1 rounded-lg">
-                <a href="#">
+                <NuxtLink to="#">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 text-white">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
                     </svg>                                            
-                </a>  
+                </NuxtLink>  
             </div>
-
         </div>
     </nav>
 </template>
