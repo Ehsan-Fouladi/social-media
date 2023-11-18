@@ -15,7 +15,14 @@
                     <!-- box -->
                     <div class="md:w-[162vh] w-96 h-fit p-4 md:mt-6 md:mr-8">
                         <div class="flex flex-row gap-3 overflow-auto">
-                            <NuxtLink href="#" class="flex flex-col relative">
+                            <NuxtLink to="#" class="flex flex-col relative">
+                                <div class="hover:backdrop-blur-sm hover:bg-black/60 w-full h-full absolute rounded-lg flex justify-center items-center overflow-hidden">
+                                    <div class="-z-50 hover:z-50 flex flex-col items-center">
+                                        <span class="text-white font-bold text-lg">walking</span>
+                                        <span class="mt-5 bg-red-600 px-2 py-1 outline-none text-xs font-medium rounded-md text-white" v-if="AlertStatus">درحال پخش</span>
+                                        <span class="mt-5 bg-green-600 px-2 py-1 outline-none text-xs font-medium rounded-md text-white" v-else>اتمام پخش</span>
+                                    </div>
+                                </div>
                                 <img class="max-w-sm h-60 md:h-80 rounded-lg object-cover object-center" src="../../public/The-Northman.jpg" alt="avatar">
                                 <div class="bg-white rounded-b absolute px-1 left-5 bg-opacity-60">
                                     <span class="text-sm font-normal">17+</span>
@@ -27,7 +34,14 @@
                                     <span class="text-xs font-medium">سافت ساب</span>
                                 </div>
                             </NuxtLink>
-                            <NuxtLink href="#" class="flex flex-col relative">
+                            <NuxtLink to="#" class="flex flex-col relative">
+                                <div class="hover:backdrop-blur-sm hover:bg-black/60 w-full h-full absolute rounded-lg flex justify-center items-center overflow-hidden">
+                                    <div class="-z-50 hover:z-50 flex flex-col items-center">
+                                        <span class="text-white font-bold text-lg">walking</span>
+                                        <span class="mt-5 bg-red-600 px-2 py-1 outline-none text-xs font-medium rounded-md text-white" v-if="AlertStatus">درحال پخش</span>
+                                        <span class="mt-5 bg-green-600 px-2 py-1 outline-none text-xs font-medium rounded-md text-white" v-else>اتمام پخش</span>
+                                    </div>
+                                </div>
                                 <img class="max-w-sm h-60 md:h-80 rounded-lg object-cover object-center" src="../../public/The-Northman.jpg" alt="avatar">
                                 <div class="bg-white rounded-b absolute px-1 left-5 bg-opacity-60">
                                     <span class="text-sm font-normal">17+</span>
@@ -39,7 +53,14 @@
                                     <span class="text-xs font-medium">سافت ساب</span>
                                 </div>
                             </NuxtLink>
-                            <NuxtLink href="#" class="flex flex-col relative">
+                            <NuxtLink to="#" class="flex flex-col relative">
+                                <div class="hover:backdrop-blur-sm hover:bg-black/60 w-full h-full absolute rounded-lg flex justify-center items-center overflow-hidden">
+                                    <div class="-z-50 hover:z-50 flex flex-col items-center">
+                                        <span class="text-white font-bold text-lg">walking</span>
+                                        <span class="mt-5 bg-red-600 px-2 py-1 outline-none text-xs font-medium rounded-md text-white" v-if="AlertStatus">درحال پخش</span>
+                                        <span class="mt-5 bg-green-600 px-2 py-1 outline-none text-xs font-medium rounded-md text-white" v-else>اتمام پخش</span>
+                                    </div>
+                                </div>
                                 <img class="max-w-sm h-60 md:h-80 rounded-lg object-cover object-center" src="../../public/The-Northman.jpg" alt="avatar">
                                 <div class="bg-white rounded-b absolute px-1 left-5 bg-opacity-60">
                                     <span class="text-sm font-normal">17+</span>
@@ -51,7 +72,14 @@
                                     <span class="text-xs font-medium">سافت ساب</span>
                                 </div>
                             </NuxtLink>
-                            <NuxtLink href="#" class="flex flex-col relative">
+                            <NuxtLink to="#" class="flex flex-col relative">
+                                <div class="hover:backdrop-blur-sm hover:bg-black/60 w-full h-full absolute rounded-lg flex justify-center items-center overflow-hidden">
+                                    <div class="-z-50 hover:z-50 flex flex-col items-center">
+                                        <span class="text-white font-bold text-lg">walking</span>
+                                        <span class="mt-5 bg-red-600 px-2 py-1 outline-none text-xs font-medium rounded-md text-white" v-if="AlertStatus">درحال پخش</span>
+                                        <span class="mt-5 bg-green-600 px-2 py-1 outline-none text-xs font-medium rounded-md text-white" v-else>اتمام پخش</span>
+                                    </div>
+                                </div>
                                 <img class="max-w-sm h-60 md:h-80 rounded-lg object-cover object-center" src="../../public/The-Northman.jpg" alt="avatar">
                                 <div class="bg-white rounded-b absolute px-1 left-5 bg-opacity-60">
                                     <span class="text-sm font-normal">17+</span>
@@ -63,7 +91,14 @@
                                     <span class="text-xs font-medium">سافت ساب</span>
                                 </div>
                             </NuxtLink>
-                            <NuxtLink href="#" class="flex flex-col relative">
+                            <NuxtLink to="#" class="flex flex-col relative">
+                                <div class="hover:backdrop-blur-sm hover:bg-black/60 w-full h-full absolute rounded-lg flex justify-center items-center overflow-hidden">
+                                    <div class="-z-50 hover:z-50 flex flex-col items-center">
+                                        <span class="text-white font-bold text-lg">walking</span>
+                                        <span class="mt-5 bg-red-600 px-2 py-1 outline-none text-xs font-medium rounded-md text-white" v-if="AlertStatus">درحال پخش</span>
+                                        <span class="mt-5 bg-green-600 px-2 py-1 outline-none text-xs font-medium rounded-md text-white" v-else>اتمام پخش</span>
+                                    </div>
+                                </div>
                                 <img class="max-w-sm h-60 md:h-80 rounded-lg object-cover object-center" src="../../public/The-Northman.jpg" alt="avatar">
                                 <div class="bg-white rounded-b absolute px-1 left-5 bg-opacity-60">
                                     <span class="text-sm font-normal">17+</span>
@@ -75,7 +110,14 @@
                                     <span class="text-xs font-medium">سافت ساب</span>
                                 </div>
                             </NuxtLink>
-                            <NuxtLink href="#" class="flex flex-col relative">
+                            <NuxtLink to="#" class="flex flex-col relative">
+                                <div class="hover:backdrop-blur-sm hover:bg-black/60 w-full h-full absolute rounded-lg flex justify-center items-center overflow-hidden">
+                                    <div class="-z-50 hover:z-50 flex flex-col items-center">
+                                        <span class="text-white font-bold text-lg">walking</span>
+                                        <span class="mt-5 bg-red-600 px-2 py-1 outline-none text-xs font-medium rounded-md text-white" v-if="AlertStatus">درحال پخش</span>
+                                        <span class="mt-5 bg-green-600 px-2 py-1 outline-none text-xs font-medium rounded-md text-white" v-else>اتمام پخش</span>
+                                    </div>
+                                </div>
                                 <img class="max-w-sm h-60 md:h-80 rounded-lg object-cover object-center" src="../../public/The-Northman.jpg" alt="avatar">
                                 <div class="bg-white rounded-b absolute px-1 left-5 bg-opacity-60">
                                     <span class="text-sm font-normal">17+</span>
@@ -87,7 +129,14 @@
                                     <span class="text-xs font-medium">سافت ساب</span>
                                 </div>
                             </NuxtLink>
-                            <NuxtLink href="#" class="flex flex-col relative">
+                            <NuxtLink to="#" class="flex flex-col relative">
+                                <div class="hover:backdrop-blur-sm hover:bg-black/60 w-full h-full absolute rounded-lg flex justify-center items-center overflow-hidden">
+                                    <div class="-z-50 hover:z-50 flex flex-col items-center">
+                                        <span class="text-white font-bold text-lg">walking</span>
+                                        <span class="mt-5 bg-red-600 px-2 py-1 outline-none text-xs font-medium rounded-md text-white" v-if="AlertStatus">درحال پخش</span>
+                                        <span class="mt-5 bg-green-600 px-2 py-1 outline-none text-xs font-medium rounded-md text-white" v-else>اتمام پخش</span>
+                                    </div>
+                                </div>
                                 <img class="max-w-sm h-60 md:h-80 rounded-lg object-cover object-center" src="../../public/The-Northman.jpg" alt="avatar">
                                 <div class="bg-white rounded-b absolute px-1 left-5 bg-opacity-60">
                                     <span class="text-sm font-normal">17+</span>
@@ -99,7 +148,14 @@
                                     <span class="text-xs font-medium">سافت ساب</span>
                                 </div>
                             </NuxtLink>
-                            <NuxtLink href="#" class="flex flex-col relative">
+                            <NuxtLink to="#" class="flex flex-col relative">
+                                <div class="hover:backdrop-blur-sm hover:bg-black/60 w-full h-full absolute rounded-lg flex justify-center items-center overflow-hidden">
+                                    <div class="-z-50 hover:z-50 flex flex-col items-center">
+                                        <span class="text-white font-bold text-lg">walking</span>
+                                        <span class="mt-5 bg-red-600 px-2 py-1 outline-none text-xs font-medium rounded-md text-white" v-if="AlertStatus">درحال پخش</span>
+                                        <span class="mt-5 bg-green-600 px-2 py-1 outline-none text-xs font-medium rounded-md text-white" v-else>اتمام پخش</span>
+                                    </div>
+                                </div>
                                 <img class="max-w-sm h-60 md:h-80 rounded-lg object-cover object-center" src="../../public/The-Northman.jpg" alt="avatar">
                                 <div class="bg-white rounded-b absolute px-1 left-5 bg-opacity-60">
                                     <span class="text-sm font-normal">17+</span>
@@ -111,7 +167,14 @@
                                     <span class="text-xs font-medium">سافت ساب</span>
                                 </div>
                             </NuxtLink>
-                            <NuxtLink href="#" class="flex flex-col relative">
+                            <NuxtLink to="#" class="flex flex-col relative">
+                                <div class="hover:backdrop-blur-sm hover:bg-black/60 w-full h-full absolute rounded-lg flex justify-center items-center overflow-hidden">
+                                    <div class="-z-50 hover:z-50 flex flex-col items-center">
+                                        <span class="text-white font-bold text-lg">walking</span>
+                                        <span class="mt-5 bg-red-600 px-2 py-1 outline-none text-xs font-medium rounded-md text-white" v-if="AlertStatus">درحال پخش</span>
+                                        <span class="mt-5 bg-green-600 px-2 py-1 outline-none text-xs font-medium rounded-md text-white" v-else>اتمام پخش</span>
+                                    </div>
+                                </div>
                                 <img class="max-w-sm h-60 md:h-80 rounded-lg object-cover object-center" src="../../public/The-Northman.jpg" alt="avatar">
                                 <div class="bg-white rounded-b absolute px-1 left-5 bg-opacity-60">
                                     <span class="text-sm font-normal">17+</span>
@@ -123,7 +186,14 @@
                                     <span class="text-xs font-medium">سافت ساب</span>
                                 </div>
                             </NuxtLink>
-                            <NuxtLink href="#" class="flex flex-col relative">
+                            <NuxtLink to="#" class="flex flex-col relative">
+                                <div class="hover:backdrop-blur-sm hover:bg-black/60 w-full h-full absolute rounded-lg flex justify-center items-center overflow-hidden">
+                                    <div class="-z-50 hover:z-50 flex flex-col items-center">
+                                        <span class="text-white font-bold text-lg">walking</span>
+                                        <span class="mt-5 bg-red-600 px-2 py-1 outline-none text-xs font-medium rounded-md text-white" v-if="AlertStatus">درحال پخش</span>
+                                        <span class="mt-5 bg-green-600 px-2 py-1 outline-none text-xs font-medium rounded-md text-white" v-else>اتمام پخش</span>
+                                    </div>
+                                </div>
                                 <img class="max-w-sm h-60 md:h-80 rounded-lg object-cover object-center" src="../../public/The-Northman.jpg" alt="avatar">
                                 <div class="bg-white rounded-b absolute px-1 left-5 bg-opacity-60">
                                     <span class="text-sm font-normal">17+</span>
@@ -135,7 +205,14 @@
                                     <span class="text-xs font-medium">سافت ساب</span>
                                 </div>
                             </NuxtLink>
-                            <NuxtLink href="#" class="flex flex-col relative">
+                            <NuxtLink to="#" class="flex flex-col relative">
+                                <div class="hover:backdrop-blur-sm hover:bg-black/60 w-full h-full absolute rounded-lg flex justify-center items-center overflow-hidden">
+                                    <div class="-z-50 hover:z-50 flex flex-col items-center">
+                                        <span class="text-white font-bold text-lg">walking</span>
+                                        <span class="mt-5 bg-red-600 px-2 py-1 outline-none text-xs font-medium rounded-md text-white" v-if="AlertStatus">درحال پخش</span>
+                                        <span class="mt-5 bg-green-600 px-2 py-1 outline-none text-xs font-medium rounded-md text-white" v-else>اتمام پخش</span>
+                                    </div>
+                                </div>
                                 <img class="max-w-sm h-60 md:h-80 rounded-lg object-cover object-center" src="../../public/The-Northman.jpg" alt="avatar">
                                 <div class="bg-white rounded-b absolute px-1 left-5 bg-opacity-60">
                                     <span class="text-sm font-normal">17+</span>
@@ -147,7 +224,14 @@
                                     <span class="text-xs font-medium">سافت ساب</span>
                                 </div>
                             </NuxtLink>
-                            <NuxtLink href="#" class="flex flex-col relative">
+                            <NuxtLink to="#" class="flex flex-col relative">
+                                <div class="hover:backdrop-blur-sm hover:bg-black/60 w-full h-full absolute rounded-lg flex justify-center items-center overflow-hidden">
+                                    <div class="-z-50 hover:z-50 flex flex-col items-center">
+                                        <span class="text-white font-bold text-lg">walking</span>
+                                        <span class="mt-5 bg-red-600 px-2 py-1 outline-none text-xs font-medium rounded-md text-white" v-if="AlertStatus">درحال پخش</span>
+                                        <span class="mt-5 bg-green-600 px-2 py-1 outline-none text-xs font-medium rounded-md text-white" v-else>اتمام پخش</span>
+                                    </div>
+                                </div>
                                 <img class="max-w-sm h-60 md:h-80 rounded-lg object-cover object-center" src="../../public/The-Northman.jpg" alt="avatar">
                                 <div class="bg-white rounded-b absolute px-1 left-5 bg-opacity-60">
                                     <span class="text-sm font-normal">17+</span>
@@ -159,7 +243,14 @@
                                     <span class="text-xs font-medium">سافت ساب</span>
                                 </div>
                             </NuxtLink>
-                            <NuxtLink href="#" class="flex flex-col relative">
+                            <NuxtLink to="#" class="flex flex-col relative">
+                                <div class="hover:backdrop-blur-sm hover:bg-black/60 w-full h-full absolute rounded-lg flex justify-center items-center overflow-hidden">
+                                    <div class="-z-50 hover:z-50 flex flex-col items-center">
+                                        <span class="text-white font-bold text-lg">walking</span>
+                                        <span class="mt-5 bg-red-600 px-2 py-1 outline-none text-xs font-medium rounded-md text-white" v-if="AlertStatus">درحال پخش</span>
+                                        <span class="mt-5 bg-green-600 px-2 py-1 outline-none text-xs font-medium rounded-md text-white" v-else>اتمام پخش</span>
+                                    </div>
+                                </div>
                                 <img class="max-w-sm h-60 md:h-80 rounded-lg object-cover object-center" src="../../public/The-Northman.jpg" alt="avatar">
                                 <div class="bg-white rounded-b absolute px-1 left-5 bg-opacity-60">
                                     <span class="text-sm font-normal">17+</span>
@@ -171,7 +262,14 @@
                                     <span class="text-xs font-medium">سافت ساب</span>
                                 </div>
                             </NuxtLink>
-                            <NuxtLink href="#" class="flex flex-col relative">
+                            <NuxtLink to="#" class="flex flex-col relative">
+                                <div class="hover:backdrop-blur-sm hover:bg-black/60 w-full h-full absolute rounded-lg flex justify-center items-center overflow-hidden">
+                                    <div class="-z-50 hover:z-50 flex flex-col items-center">
+                                        <span class="text-white font-bold text-lg">walking</span>
+                                        <span class="mt-5 bg-red-600 px-2 py-1 outline-none text-xs font-medium rounded-md text-white" v-if="AlertStatus">درحال پخش</span>
+                                        <span class="mt-5 bg-green-600 px-2 py-1 outline-none text-xs font-medium rounded-md text-white" v-else>اتمام پخش</span>
+                                    </div>
+                                </div>
                                 <img class="max-w-sm h-60 md:h-80 rounded-lg object-cover object-center" src="../../public/The-Northman.jpg" alt="avatar">
                                 <div class="bg-white rounded-b absolute px-1 left-5 bg-opacity-60">
                                     <span class="text-sm font-normal">17+</span>
@@ -183,7 +281,14 @@
                                     <span class="text-xs font-medium">سافت ساب</span>
                                 </div>
                             </NuxtLink>
-                            <NuxtLink href="#" class="flex flex-col relative">
+                            <NuxtLink to="#" class="flex flex-col relative">
+                                <div class="hover:backdrop-blur-sm hover:bg-black/60 w-full h-full absolute rounded-lg flex justify-center items-center overflow-hidden">
+                                    <div class="-z-50 hover:z-50 flex flex-col items-center">
+                                        <span class="text-white font-bold text-lg">walking</span>
+                                        <span class="mt-5 bg-red-600 px-2 py-1 outline-none text-xs font-medium rounded-md text-white" v-if="AlertStatus">درحال پخش</span>
+                                        <span class="mt-5 bg-green-600 px-2 py-1 outline-none text-xs font-medium rounded-md text-white" v-else>اتمام پخش</span>
+                                    </div>
+                                </div>
                                 <img class="max-w-sm h-60 md:h-80 rounded-lg object-cover object-center" src="../../public/The-Northman.jpg" alt="avatar">
                                 <div class="bg-white rounded-b absolute px-1 left-5 bg-opacity-60">
                                     <span class="text-sm font-normal">17+</span>
@@ -203,7 +308,17 @@
     </section>
     <!-- carts -->
 </template>
-<script setup>
+<script>
+export default {
+    data() {
+        return {
+            AlertStatus: true,
+        }
+    },
+    methods: {
+        
+    },
+}
 </script>
 <style scoped>
 div .back{
