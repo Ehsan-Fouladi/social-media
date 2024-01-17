@@ -25,7 +25,7 @@ export default {
 }
 </script>
 <template>
-    <nav class="w-full h-auto flex flex-col md:hidden fixed z-50 p-3 backdrop-blur bg-gray-800 bottom-0">
+    <nav class="w-full h-auto flex flex-col fixed z-50 p-3 md:hidden backdrop-blur bg-gray-800 bottom-0">
         <div class="px-5 flex flex-row justify-between items-center">
             <!-- home -->
             <div class="flex items-center bg-gray-700 px-2 py-1 rounded-lg">
@@ -39,10 +39,10 @@ export default {
             <div class="flex items-center bg-gray-700 px-2 py-1 rounded-lg">
                 <div v-show="!menuMobile" class="absolute m-0 -top-[280px] text-white bg-gray-800 rounded-lg p-4 w-56 h-auto ps-5">
                     <ul class="text-2xl font-medium space-y-9">
-                        <li class="block hover:bg-gray-700 hover:translate-y-1 hover:rounded hover:px-3 hover:py-2 hover:shadow-md hover:shadow-indigo-600 duration-300 delay-200"><NuxtLink to="#">انیمه</NuxtLink></li>
-                        <li class="block hover:bg-gray-700 hover:translate-y-1 hover:rounded hover:px-3 hover:py-2 hover:shadow-md hover:shadow-indigo-600 duration-300 delay-200"><NuxtLink to="#">کره ای</NuxtLink></li>
-                        <li class="block hover:bg-gray-700 hover:translate-y-1 hover:rounded hover:px-3 hover:py-2 hover:shadow-md hover:shadow-indigo-600 duration-300 delay-200"><NuxtLink to="#">ترکی</NuxtLink></li>
-                        <li class="block hover:bg-gray-700 hover:translate-y-1 hover:rounded hover:px-3 hover:py-2 hover:shadow-md hover:shadow-indigo-600 duration-300 delay-200"><NuxtLink to="#">خارجی</NuxtLink></li>
+                        <li class="block hover:pr-4 hover:rounded-md hover:bg-indigo-600/40 backdrop-blur px-2 py-1 duration-500"><NuxtLink to="#">انیمه</NuxtLink></li>
+                        <li class="block hover:pr-4 hover:rounded-md hover:bg-indigo-600/40 backdrop-blur px-2 py-1 duration-500"><NuxtLink to="#">کره ای</NuxtLink></li>
+                        <li class="block hover:pr-4 hover:rounded-md hover:bg-indigo-600/40 backdrop-blur px-2 py-1 duration-500"><NuxtLink to="#">ترکی</NuxtLink></li>
+                        <li class="block hover:pr-4 hover:rounded-md hover:bg-indigo-600/40 backdrop-blur px-2 py-1 duration-500"><NuxtLink to="#">خارجی</NuxtLink></li>
                     </ul>
                 </div>
                 <div v-if="menuMobile" @click="clickMenuMobile">
@@ -63,11 +63,11 @@ export default {
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
                     </svg>
                 </div>
-                <div class="bg-black/70 absolute h-screen ml-24 mr-1 -bottom-3 w-screen -z-50 flex justify-center items-center" v-show="!SearchBox">
-                    <form method="get" class="inline-block">
-                    <input type="search" name="q" placeholder="جستجوی سریع..." class="block py-3 px-3 rounded-md bg-gray-700 text-gray-300 focus:text-base outline-none text-base font-medium w-96">
-                    </form>
-                </div>
+            </div>
+            <div class="bg-black/70 backdrop-blur w-screen min-h-lvh absolute bottom-0 right-0 left-0 -z-50 flex justify-center items-center" v-show="!SearchBox">
+                <form method="get" class="inline-block">
+                    <input type="search" name="q" placeholder="جستجوی سریع..." class="py-3 px-3 rounded-md bg-gray-700 text-gray-300 focus:text-base outline-none text-base font-medium w-96">
+                </form>
             </div>
             <!-- login -->
             <div class="flex items-center bg-gray-700 px-2 py-1 rounded-lg">

@@ -17,7 +17,7 @@ export default {
 }
 </script>
 <template>
-    <header class="w-full h-auto flex flex-col fixed p-3 z-50 backdrop-blur bg-gray-800">
+    <header class="w-full h-auto flex flex-col fixed p-3 z-50 backdrop-blur bg-gray-800" id="header">
         <div class="container mx-auto px-3 py-3">
             <div class="flex items-center md:justify-evenly justify-between relative">
                 <!-- menu -->
@@ -34,12 +34,13 @@ export default {
                         </svg>
                         <div class="absolute p-3 px-1 py-2 pl-2 w-52 top-16 mr-5 bg-gray-800 rounded-md">
                             <div class="flex">
-                                <ul class="text-white p-4 space-y-9 cursor-pointer font-medium w-full">
-                                    <li class="block hover:bg-gray-700 hover:translate-y-1 hover:rounded hover:px-3 hover:py-2 hover:shadow-md hover:shadow-indigo-600 duration-300 delay-200"><a href="#">انیمه</a></li>
-                                    <li class="block hover:bg-gray-700 hover:translate-y-1 hover:rounded hover:px-3 hover:py-2 hover:shadow-md hover:shadow-indigo-600 duration-300 delay-200"><a href="#">کره ای</a></li>
-                                    <li class="block hover:bg-gray-700 hover:translate-y-1 hover:rounded hover:px-3 hover:py-2 hover:shadow-md hover:shadow-indigo-600 duration-300 delay-200"><a href="#">ترکی</a></li>
-                                    <li class="block hover:bg-gray-700 hover:translate-y-1 hover:rounded hover:px-3 hover:py-2 hover:shadow-md hover:shadow-indigo-600 duration-300 delay-200"><a href="#">خارجی</a></li>
+                                <ul class="text-white p-4 space-y-5 cursor-pointer font-medium w-full">
+                                    <li class="block hover:pr-4 hover:rounded-md hover:bg-indigo-600/40 backdrop-blur px-2 py-1 duration-500"><NuxtLink to="#">انیمه</NuxtLink></li>
+                                    <li class="block hover:pr-4 hover:rounded-md hover:bg-indigo-600/40 backdrop-blur px-2 py-1 duration-500"><NuxtLink to="#">کره ای</NuxtLink></li>
+                                    <li class="block hover:pr-4 hover:rounded-md hover:bg-indigo-600/40 backdrop-blur px-2 py-1 duration-500"><NuxtLink to="#">ترکی</NuxtLink></li>
+                                    <li class="block hover:pr-4 hover:rounded-md hover:bg-indigo-600/40 backdrop-blur px-2 py-1 duration-500"><NuxtLink to="#">خارجی</NuxtLink></li>
                                 </ul>
+                                
                             </div>
                         </div> 
                     </div>           
@@ -54,6 +55,12 @@ export default {
                             </svg>                              
                         </div>
                     </form>
+                    <div class="bg-gray-900 lg:w-full-screen md:w-96 h-96 p-4 rounded-md overflow-auto mt-4 absolute hidden">
+                        <NuxtLink to="#" class="rounded-sm duration-300 flex flex-row items-center justify-between peer hover:pe-3 mt-6">
+                            <img class="object-cover object-center size-20 rounded-md hover:size-40 duration-500 delay-100" src="../../public/The-Northman.jpg" alt="image file">
+                            <span class="text-lg text-white font-medium hover:text-gray-500">walking</span>
+                        </NuxtLink>
+                    </div>
                 </div>
                 <!-- box -->
                 <div class="flex items-center sm:mr-1 lg:mr-3 xl:mr-0">
