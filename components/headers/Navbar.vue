@@ -9,7 +9,7 @@ function SearchInput(){
 }
 </script>
 <template>
-    <nav class="w-full h-auto flex flex-col fixed z-50 p-3 md:hidden backdrop-blur bg-gray-800 bottom-0">
+    <nav class="w-full h-auto flex flex-col fixed z-50 p-3 md:hidden backdrop-blur bg-gray-800/70 bottom-0">
         <div class="px-5 flex flex-row justify-between items-center">
             <!-- home -->
             <div class="flex items-center bg-gray-700 px-2 py-1 rounded-lg">

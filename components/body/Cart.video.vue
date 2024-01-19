@@ -87,13 +87,8 @@
             </div>
         </div>
         <!-- box video update -->
-</div></template>
-<script>
-export default {
-    data() {
-        return {
-            AlertStatus: false,
-        }
-    },
-}
+    </div>
+</template>
+<script setup>
+const AlertStatus = ref(false)
 </script>

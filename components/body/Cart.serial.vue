@@ -74,12 +74,6 @@
     <!-- box video update -->
 </div>
 </template>
-<script>
-export default {
-    data() {
-        return {
-            AlertStatus: true,
-        }
-    },
-}
+<script setup>
+const AlertStatus = ref(true)
 </script>

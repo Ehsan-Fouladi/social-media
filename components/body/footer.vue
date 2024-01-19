@@ -23,16 +23,9 @@
         </div>
     </div>
 </template>
-<script>
-export default {
-    data() {
-        return {
-            TimeDate: ''
-        }
-    },
-    mounted() {
-        this.TimeDate = new Date().getFullYear()
-    },
-}
-
+<script setup>
+const TimeDate = ref()
+onMounted(() => {
+    TimeDate.value = new Date().getFullYear()
+})
 </script>

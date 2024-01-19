@@ -1,38 +1,11 @@
 <script setup>
-const header = ref(null)
-const hero_section = ref(null)
-const scrollY = ref(0)
 const menu = ref(true)
 function clickMenu() {
     menu.value = !menu.value
 }
-onMounted(() => {
-    hero_section.value = document.getElementById('hero-section');
-    header.value = document.getElementById('header');
-
-    window.addEventListener('scroll', updateScrollPosition)
-    updateScrollPosition()
-})
-
-onUnmounted(() => {
-    window.removeEventListener('scroll', updateScrollPosition)
-})
-function updateScrollPosition() {
-    scrollY.value = window.scrollY;
-    if ((!!hero_section.value) && (!!header.value)) {
-        if (scrollY.value >= (hero_section.value.offsetHeight - ((header.value?.offsetHeight ?? 0) + 1))) {
-            header.value?.classList.add('fixed')
-            header.value?.classList.add('bg-gray-800/60')
-        }
-        else {
-            header.value?.classList.remove('fixed')
-            header.value?.classList.remove('bg-gray-800/60')
-        }
-    }
-}
 </script>
 <template>
-    <header class="w-full h-auto flex flex-col p-3 z-50 backdrop-blur transition-all duration-300 bg-gray-800" id="header">
+    <header class="w-full h-auto flex flex-col p-3 z-50 backdrop-blur-lg fixed transition-all duration-300 bg-gray-800/70">
         <div class="container mx-auto px-3 py-3">
             <div class="flex items-center md:justify-evenly justify-between relative">
                 <!-- menu -->
@@ -48,14 +21,15 @@ function updateScrollPosition() {
                             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                         </svg>
                         <div class="absolute p-3 px-1 py-2 pl-2 w-52 top-16 mr-5 bg-gray-800 rounded-md">
-                            
+                            <div class="flex">
                                 <ul class="text-white p-4 space-y-5 cursor-pointer font-medium w-full">
                                     <li class="block hover:pr-4 hover:rounded-md hover:bg-indigo-600/40 backdrop-blur px-2 py-1 duration-500"><NuxtLink to="#">انیمه</NuxtLink></li>
                                     <li class="block hover:pr-4 hover:rounded-md hover:bg-indigo-600/40 backdrop-blur px-2 py-1 duration-500"><NuxtLink to="#">کره ای</NuxtLink></li>
                                     <li class="block hover:pr-4 hover:rounded-md hover:bg-indigo-600/40 backdrop-blur px-2 py-1 duration-500"><NuxtLink to="#">ترکی</NuxtLink></li>
                                     <li class="block hover:pr-4 hover:rounded-md hover:bg-indigo-600/40 backdrop-blur px-2 py-1 duration-500"><NuxtLink to="#">خارجی</NuxtLink></li>
                                 </ul>
-                            
+                                
+                            </div>
                         </div> 
                     </div>           
                 </div>

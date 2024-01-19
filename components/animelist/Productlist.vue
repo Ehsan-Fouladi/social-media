@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-gray-900" id="hero-section">
+    <div class="bg-gray-900">
         <div class="flex flex-col justify-center items-center">
             <div class="bg-gradient-to-r from-gray-800 via-gray-800 to-yellow-900 px-4 py-4 w-8/12 lg:mr-14 mt-32 rounded">
                 <span class="text-white font-medium text-xl">بایگانی‌ها: انیمه</span> 
