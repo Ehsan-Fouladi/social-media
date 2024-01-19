@@ -1,27 +1,11 @@
-<script>
-export default {
-    data() {
-        return {
-            menuMobile: true,
-            SearchBox: true,
-        }
-    },
-    methods: {
-        clickMenuMobile(){
-            if (this.menuMobile == true){
-                this.menuMobile = false
-            }else{
-                this.menuMobile = true
-            }
-        },
-        SearchInput(){
-            if (this.SearchBox == true){
-                this.SearchBox = false
-            }else{
-                this.SearchBox = true
-            }
-        }
-    },
+<script setup>
+const menuMobile = ref(true)
+const SearchBox = ref(true)
+function clickMenuMobile(){
+    menuMobile.value = !menuMobile.value
+} 
+function SearchInput(){
+    SearchBox.value = !SearchBox.value
 }
 </script>
 <template>

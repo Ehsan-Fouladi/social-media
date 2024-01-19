@@ -1,8 +1,8 @@
 <template>
     <!-- carts -->
-    <section>
+    <section id="hero-section">
         <div class="flex flex-row justify-center items-center">
-            <div class="mx-auto w-screen h-screen bg-no-repeat bg-center back"></div>
+            <div class="w-screen h-screen bg-no-repeat bg-center back md:-mt-20"></div>
             <div class="absolute mt-16 md:mt-0">
                 <div class="flex md:-mr-10">
                     <div class="flex justify-center items-center">
@@ -308,20 +308,11 @@
     </section>
     <!-- carts -->
 </template>
-<script>
-export default {
-    data() {
-        return {
-            AlertStatus: true,
-        }
-    },
-    methods: {
-        
-    },
-}
+<script setup>
+const AlertStatus = ref(true)
 </script>
 <style scoped>
 div .back{
-    background-image: url('../../public/background1.jpg');
+    background-image: url('~/public/background1.jpg');
 }
 </style>
