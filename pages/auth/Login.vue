@@ -9,7 +9,7 @@
                 <input type="password" placeholder="گذرواژه خود را وارد کنید." class="border-b-2 border-black outline-none w-full rounded px-10 py-2 text-purple-700 placeholder:text-gray-400 mt-10">
                 <div class="mt-6 flex flex-col md:flex-row md:justify-between">
                     <div class="flex items-center mr-7">
-                        <input type="checkbox" class="w-4 h-4 rounded-full">
+                        <input type="checkbox" class="w-4 h-4 rounded-full accent-teal-600">
                         <span class="mr-2 font-medium text-base"> مرا بخاطر بسپار</span>
                     </div>
                     <div class="ml-7 mt-6 md:mt-0">
@@ -17,10 +17,13 @@
                     </div>
                 </div>
                 <div class="flex flex-col justify-center items-center mt-20">
-                    <NuxtLink class="bg-violet-700 py-3 px-10 rounded text-white outline-none hover:scale-110 delay-300 duration-200 ease-in">ورود</NuxtLink>
-                    <NuxtLink to="/auth/register/" class="bg-gray-800 py-3 px-10 rounded text-white outline-none hover:scale-110 delay-300 duration-200 ease-in mt-3">ثبت نام در سایت</NuxtLink>
+                    <NuxtLink class="bg-violet-700 py-3 px-10 rounded text-white outline-none hover:scale-110 duration-500 ease-in">ورود</NuxtLink>
+                    <NuxtLink to="/auth/register/" class="bg-gray-800 py-3 px-10 rounded text-white outline-none hover:scale-110 duration-300 ease-in mt-3">ثبت نام در سایت</NuxtLink>
                 </div>
             </form>
         </div>
     </div>
 </template>
+<script setup>
+definePageMeta({layout: false})
+</script>

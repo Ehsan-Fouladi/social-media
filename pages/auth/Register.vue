@@ -15,10 +15,13 @@
                     </div>
                 </div>
                 <div class="flex flex-col justify-center items-center mt-10">
-                    <NuxtLink class="bg-violet-700 py-3 px-10 rounded text-white outline-none hover:scale-110 delay-300 duration-200 ease-in">ثبت نام</NuxtLink>
-                    <NuxtLink to="/auth/login/" class="bg-gray-800 py-3 px-10 rounded text-white outline-none hover:scale-110 delay-300 duration-200 ease-in mt-3">ورود به سایت</NuxtLink>
+                    <NuxtLink class="bg-violet-700 py-3 px-10 rounded text-white outline-none hover:scale-110 duration-500 ease-in">ثبت نام</NuxtLink>
+                    <NuxtLink to="/auth/login/" class="bg-gray-800 py-3 px-10 rounded text-white outline-none hover:scale-110 duration-300 ease-in mt-3">ورود به سایت</NuxtLink>
                 </div>
             </form>
         </div>
     </div>
 </template>
+<script setup>
+definePageMeta({layout:false})
+</script>

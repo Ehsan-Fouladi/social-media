@@ -8,13 +8,16 @@
                 <input type="text" placeholder="ایمیل خود را وارد کنید." class="border-b-2 border-black outline-none w-full rounded px-10 py-2 text-purple-700 placeholder:text-gray-400 mt-10">
 
                 <div class="mt-20 flex justify-center items-center">
-                    <NuxtLink class="bg-violet-700 py-3 px-10 rounded text-white outline-none hover:scale-110 delay-300 duration-200 ease-in">تایید</NuxtLink>
+                    <NuxtLink class="bg-violet-700 py-3 px-10 rounded text-white outline-none hover:scale-110 duration-300 ease-in">تایید</NuxtLink>
                 </div>
                 <div class="flex flex-col md:flex-row items-center md:justify-evenly">
-                    <NuxtLink to="/auth/login/" class="bg-gray-800 py-3 px-10 rounded text-white outline-none hover:scale-110 delay-300 duration-200 ease-in mt-3 w-60 md:w-auto">ورود به سایت</NuxtLink>
-                    <NuxtLink to="/" class="bg-gray-800 py-3 px-10 rounded text-white outline-none hover:scale-110 delay-300 duration-200 ease-in mt-3 w-60 md:w-auto">بازگشت به سایت</NuxtLink>
+                    <NuxtLink to="/auth/login/" class="bg-gray-800 py-3 px-10 rounded text-white outline-none hover:scale-110 duration-500 ease-in mt-3 w-60 md:w-auto">ورود به سایت</NuxtLink>
+                    <NuxtLink to="/" class="bg-gray-800 py-3 px-10 rounded text-white outline-none hover:scale-110 duration-500 ease-in mt-3 w-60 md:w-auto">بازگشت به سایت</NuxtLink>
                 </div>
             </form>
         </div>
     </div>
 </template>
+<script>
+definePageMeta({layout:false})
+</script>
