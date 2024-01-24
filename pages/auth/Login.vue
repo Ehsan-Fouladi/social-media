@@ -1,25 +1,27 @@
 <template>
-    <div class="bg-gray-800 h-screen flex justify-center items-center">
-        <div class="bg-white rounded-md  w-full-screen shadow-2xl shadow-teal-600">
-            <div class="flex justify-center mt-10">
-                <span class="font-semibold text-3xl hover:text-yellow-300 hover:origin-top-left hover:rotate-12 delay-300 duration-200 ease-in">ورود به سایت</span>
-            </div>
-            <form method="get" class="p-4 mt-36">
-                <input type="text" placeholder="ایمیل خود را وارد کنید." class="border-b-2 border-black outline-none w-full rounded px-10 py-2 text-purple-700 placeholder:text-gray-400">
-                <input type="password" placeholder="گذرواژه خود را وارد کنید." class="border-b-2 border-black outline-none w-full rounded px-10 py-2 text-purple-700 placeholder:text-gray-400 mt-10">
-                <div class="mt-6 flex flex-col md:flex-row md:justify-between">
-                    <div class="flex items-center mr-7">
-                        <input type="checkbox" class="w-4 h-4 rounded-full accent-teal-600">
-                        <span class="mr-2 font-medium text-base"> مرا بخاطر بسپار</span>
+    <div class="flex justify-center items-center overflow-hidden h-screen">
+        <img class="w-screen h-screen object-cover object-center" src="~/public/subtle-prism.svg" alt="avatar">
+        <div class="bg-gray-700/30 w-80 sm:w-96 xl:w-[30%] h-auto p-4 z-50 mx-auto rounded-md backdrop-blur-md absolute flex flex-col justify-center">
+            <span class="text-black/70 capitalize italic font-medium text-2xl text-center">login</span>
+            <form action="" method="post" class="p-3 mt-5 flex flex-col justify-center">
+                <div class="flex flex-col">
+                    <label for="email" class="text-gray-700 text-pretty mr-2">ایمیل:</label>
+                    <input type="email" name="email" placeholder="ایمیل" class="bg-gray-600 rounded-lg px-3 py-3 outline-none text-white xl:w-96 focus:placeholder:text-gray-300 hover:shadow-lg hover:shadow-teal-500 duration-300 mt-2">
+                </div>
+                <div class="flex flex-col mt-5">
+                    <label for="password" class="text-gray-700 text-pretty mr-2">گذرواژه:</label>
+                    <input type="password" name="password" placeholder="گذرواژه" class="bg-gray-600 rounded-lg px-3 py-3 outline-none text-white xl:w-96 focus:placeholder:text-gray-300 hover:shadow-lg hover:shadow-teal-500 duration-300 mt-1">
+                </div>
+                <div class="flex flex-row  justify-between items-center">
+                    <div class="mt-5 flex items-center">
+                        <input type="checkbox" class="size-3 accent-rose-500 text-gray-700"><span class="mr-2">مرابه خاطربسپار</span>
                     </div>
-                    <div class="ml-7 mt-6 md:mt-0">
-                        <NuxtLink to="/auth/reset-password/" class="text-gray-900 font-medium text-base">رمز عبور خود را فراموش کردید!</NuxtLink>
+                    <div class="mt-5">
+                        <NuxtLink to="/auth/reset-password" class="ml-2 hover:underline duration-300 text-sky-700">فراموشی گذرواژه</NuxtLink>
                     </div>
                 </div>
-                <div class="flex flex-col justify-center items-center mt-20">
-                    <NuxtLink class="bg-violet-700 py-3 px-10 rounded text-white outline-none hover:scale-110 duration-500 ease-in">ورود</NuxtLink>
-                    <NuxtLink to="/auth/register/" class="bg-gray-800 py-3 px-10 rounded text-white outline-none hover:scale-110 duration-300 ease-in mt-3">ثبت نام در سایت</NuxtLink>
-                </div>
+                <button class="mt-5 px-2 py-3 bg-green-500 rounded-lg text-white outline-none transition-all hover:scale-105 duration-300 bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500">ورود</button>
+                <NuxtLink to="/auth/register" class="mt-2 px-2 py-3 bg-gray-600 rounded-lg text-white outline-none transition-all hover:scale-105 duration-300 bg-gradient-to-r hover:from-purple-600 hover:to-indigo-500 text-center">ایا حساب کاربری دارید؟</NuxtLink>
             </form>
         </div>
     </div>
