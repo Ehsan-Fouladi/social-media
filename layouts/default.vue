@@ -26,32 +26,53 @@ function ScrollPosition(){
 <template>
     <header class="w-full h-auto flex flex-col p-3 z-50 backdrop-blur-lg fixed transition-all duration-300 bg-gray-800/70">
         <div class="container mx-auto px-3 py-3">
-            <div class="flex items-center md:justify-evenly justify-between relative">
+            <div class="flex items-center md:justify-evenly justify-between">
                 <!-- menu -->
-                <div class="flex items-center lg:ml-20 xl:ml-0">
-                    <img class="object-cover w-full h-full hover:scale-110 duration-500 delay-300" src="https://aiofilm.click/wp-content/uploads/2023/08/logo.png" alt="avatar">
+                <div class="flex items-center lg:ml-20 xl:ml-0 relative">
+                    <img class="object-cover w-full h-full hover:scale-110 duration-500" draggable="false" src="https://aiofilm.click/wp-content/uploads/2023/08/logo.png" alt="avatar">
                     <div class="mr-7 hidden md:block" v-if="menu" @click="clickMenu">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 text-white cursor-pointer">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                         </svg>
                     </div>                
-                    <div class="mr-7 hidden md:block" v-else @click="clickMenu">
+                    <div class="mr-7 hidden md:block" v-else @click="clickMenu"></div>
+                </div>
+                <transition enter-to-class="animate__animated animate__slideInRight" leave-to-class="animate__animated animate__slideOutRight">
+                <div v-show="!menu" @click="clickMenu" class="absolute right-0 h-dvh -top-0 w-96 p-4 z-50 bg-gray-800 overflow-auto rounded-l-lg max-w-md">
+                    <div class="flex flex-row justify-between items-center mt-3">
+                        <img class="object-cover hover:scale-110 duration-500" draggable="false" src="https://aiofilm.click/wp-content/uploads/2023/08/logo.png" alt="avatar">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 text-white cursor-pointer">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                         </svg>
-                        <div class="absolute p-3 px-1 py-2 pl-2 w-52 top-16 mr-5 bg-gray-800 rounded-md">
-                            <div class="flex">
-                                <ul class="text-white p-4 space-y-5 cursor-pointer font-medium w-full">
-                                    <li class="block hover:pr-4 hover:rounded-md hover:bg-indigo-600/40 backdrop-blur px-2 py-1 duration-500"><NuxtLink to="#">انیمه</NuxtLink></li>
-                                    <li class="block hover:pr-4 hover:rounded-md hover:bg-indigo-600/40 backdrop-blur px-2 py-1 duration-500"><NuxtLink to="#">کره ای</NuxtLink></li>
-                                    <li class="block hover:pr-4 hover:rounded-md hover:bg-indigo-600/40 backdrop-blur px-2 py-1 duration-500"><NuxtLink to="#">ترکی</NuxtLink></li>
-                                    <li class="block hover:pr-4 hover:rounded-md hover:bg-indigo-600/40 backdrop-blur px-2 py-1 duration-500"><NuxtLink to="#">خارجی</NuxtLink></li>
-                                </ul>
-                                
-                            </div>
-                        </div> 
-                    </div>           
-                </div>
+                    </div>
+                    <div class="flex flex-col mt-6 text-white p-4 space-y-5 cursor-pointer font-medium w-full transition-all">
+                        <NuxtLink to="/" class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700 duration-500">
+                            <span class="text-gray-300 font-medium text-nowrap hover:text-purple-500 duration-500">فیلم</span>
+                        </NuxtLink>
+                        <NuxtLink to="/" class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700 duration-500">
+                            <span class="text-gray-300 font-medium text-nowrap hover:text-purple-500 duration-500">سریال</span>
+                        </NuxtLink>
+                        <NuxtLink to="/" class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700 duration-500">
+                            <span class="text-gray-300 font-medium text-nowrap hover:text-purple-500 duration-500">انیمه</span>
+                        </NuxtLink>
+                        <NuxtLink to="/" class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700 duration-500">
+                            <span class="text-gray-300 font-medium text-nowrap hover:text-purple-500 duration-500">کره ای</span>
+                        </NuxtLink>
+                        <NuxtLink to="/" class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700 duration-500">
+                            <span class="text-gray-300 font-medium text-nowrap hover:text-purple-500 duration-500">دوبله فارسی</span>
+                        </NuxtLink>
+                        <NuxtLink to="/" class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700 duration-500">
+                            <span class="text-gray-300 font-medium text-nowrap hover:text-purple-500 duration-500">خارجی</span>
+                        </NuxtLink>
+                        <NuxtLink to="/" class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700 duration-500">
+                            <span class="text-gray-300 font-medium text-nowrap hover:text-purple-500 duration-500">مانگا</span>
+                        </NuxtLink>
+                        <NuxtLink to="/" class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700 duration-500">
+                            <span class="text-gray-300 font-medium text-nowrap hover:text-purple-500 duration-500">مانهوا</span>
+                        </NuxtLink>
+                    </div>
+                </div> 
+                </transition>
                 <!-- search -->
                 <div class="flex items-center hidden md:block">
                     <form method="get" class="flex justify-end items-center">
@@ -114,6 +135,15 @@ function ScrollPosition(){
                         </NuxtLink>
                         <NuxtLink to="/" class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700">
                             <span class="text-gray-300 font-medium text-nowrap hover:text-purple-500">دوبله فارسی</span>
+                        </NuxtLink>
+                        <NuxtLink to="/" class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700">
+                            <span class="text-gray-300 font-medium text-nowrap hover:text-purple-500">خارجی</span>
+                        </NuxtLink>
+                        <NuxtLink to="/" class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700">
+                            <span class="text-gray-300 font-medium text-nowrap hover:text-purple-500">مانگا</span>
+                        </NuxtLink>
+                        <NuxtLink to="/" class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700">
+                            <span class="text-gray-300 font-medium text-nowrap hover:text-purple-500">مانهوا</span>
                         </NuxtLink>
                     </div>
                 </div>
