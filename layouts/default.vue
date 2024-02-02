@@ -94,15 +94,31 @@ function ScrollPosition(){
                 </NuxtLink>  
             </div>
             <!-- menu -->
-            <div class="flex items-center bg-gray-700 px-2 py-1 rounded-lg">
-                <div v-show="!menuMobile" class="absolute m-0 -top-[280px] text-white bg-gray-800 rounded-lg p-4 w-56 h-auto ps-5">
-                    <ul class="text-xl font-medium space-y-9">
-                        <li class="block hover:pr-4 hover:rounded-md hover:bg-indigo-600/40 backdrop-blur px-2 py-1 duration-500"><NuxtLink to="#">انیمه</NuxtLink></li>
-                        <li class="block hover:pr-4 hover:rounded-md hover:bg-indigo-600/40 backdrop-blur px-2 py-1 duration-500"><NuxtLink to="#">کره ای</NuxtLink></li>
-                        <li class="block hover:pr-4 hover:rounded-md hover:bg-indigo-600/40 backdrop-blur px-2 py-1 duration-500"><NuxtLink to="#">ترکی</NuxtLink></li>
-                        <li class="block hover:pr-4 hover:rounded-md hover:bg-indigo-600/40 backdrop-blur px-2 py-1 duration-500"><NuxtLink to="#">خارجی</NuxtLink></li>
-                    </ul>
+            <transition enter-to-class="animate__animated animate__slideInLeft" leave-to-class="animate__animated animate__slideOutLeft">
+                <div v-show="!menuMobile" class="absolute bg-black/90 backdrop-blur-lg  md:hidden -z-50 h-dvh w-dvw right-0 bottom-0 overflow-auto">
+                    <div class="h-screen flex flex-col justify-center items-center -mt-5 space-y-6">
+                        <NuxtLink to="/" class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700">
+                            <span class="text-gray-300 font-medium text-nowrap hover:text-purple-500">صفحه اصلی</span>
+                        </NuxtLink>
+                        <NuxtLink to="/" class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700">
+                            <span class="text-gray-300 font-medium text-nowrap hover:text-purple-500">فیلم</span>
+                        </NuxtLink>
+                        <NuxtLink to="/" class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700">
+                            <span class="text-gray-300 font-medium text-nowrap hover:text-purple-500">سریال</span>
+                        </NuxtLink>
+                        <NuxtLink to="/" class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700">
+                            <span class="text-gray-300 font-medium text-nowrap hover:text-purple-500">انیمه</span>
+                        </NuxtLink>
+                        <NuxtLink to="/" class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700">
+                            <span class="text-gray-300 font-medium text-nowrap hover:text-purple-500">کره ای</span>
+                        </NuxtLink>
+                        <NuxtLink to="/" class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700">
+                            <span class="text-gray-300 font-medium text-nowrap hover:text-purple-500">دوبله فارسی</span>
+                        </NuxtLink>
+                    </div>
                 </div>
+            </transition>
+            <div class="flex items-center bg-gray-700 px-2 py-1 rounded-lg">
                 <div v-if="menuMobile" @click="clickMenuMobile">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 text-white cursor-pointer">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -122,11 +138,13 @@ function ScrollPosition(){
                     </svg>
                 </div>
             </div>
-            <div class="bg-black/70 backdrop-blur w-screen min-h-lvh absolute bottom-0 right-0 left-0 -z-50 flex justify-center items-center" v-show="!SearchBox">
-                <form method="get" class="inline-block">
-                    <input type="search" name="q" placeholder="جستجوی سریع..." class="py-3 px-3 rounded-md bg-gray-700 text-gray-300 focus:text-base outline-none text-base font-medium w-96">
-                </form>
-            </div>
+            <transition enter-to-class="animate__animated animate__slideInLeft" leave-to-class="animate__animated animate__slideOutLeft">
+                <div class="bg-black/70 backdrop-blur w-screen min-h-lvh absolute bottom-0 right-0 left-0 -z-50 flex justify-center items-center" v-show="!SearchBox">
+                    <form method="get" class="inline-block">
+                        <input type="search" name="q" placeholder="جستجوی سریع..." class="py-3 px-3 rounded-md bg-gray-700 text-gray-300 focus:text-base outline-none text-base font-medium w-96">
+                    </form>
+                </div>
+            </transition>
             <!-- login -->
             <div class="flex items-center bg-gray-700 px-2 py-1 rounded-lg">
                 <NuxtLink to="/auth/login/">
