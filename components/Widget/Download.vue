@@ -15,7 +15,6 @@
         </div>
     </div>
 </template>
-
 <script setup>
 const active_section = ref(1)
 </script>
