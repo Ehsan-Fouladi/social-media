@@ -24,7 +24,7 @@ function ScrollPosition(){
 }
 </script>
 <template>
-    <header class="w-full h-auto flex flex-col p-3 z-50 backdrop-blur-lg fixed transition-all duration-300 bg-gray-800/70">
+    <header class="w-full h-auto flex flex-col p-3 z-50 backdrop-blur-lg sticky top-0 transition-all duration-300 bg-gray-800/70">
         <div class="container mx-auto px-3 py-3">
             <div class="flex items-center md:justify-evenly justify-between">
                 <!-- menu -->
@@ -104,7 +104,7 @@ function ScrollPosition(){
         <!-- scroll progress bar -->
     </header>
     <slot/>
-    <nav class="w-full h-auto flex flex-col fixed z-50 p-3 md:hidden backdrop-blur bg-gray-800/70 bottom-0">
+    <nav class="w-full h-auto flex flex-col sticky z-50 p-3 md:hidden backdrop-blur bg-gray-800/70 bottom-0">
         <div class="px-5 flex flex-row justify-between items-center">
             <!-- home -->
             <div class="flex items-center bg-gray-700 px-2 py-1 rounded-lg">

@@ -2,7 +2,7 @@
     <!-- carts -->
     <section>
         <div class="flex flex-row justify-center items-center">
-            <div class="w-screen h-screen bg-no-repeat bg-center back"></div>
+            <div class="w-screen h-screen bg-no-repeat bg-center back -mt-16"></div>
             <div class="absolute mt-16 md:mt-0">
                 <div class="flex md:-mr-10">
                     <div class="flex justify-center items-center">

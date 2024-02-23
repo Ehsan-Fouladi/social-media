@@ -2,7 +2,7 @@
     <div class="relative flex flex-col justify-center items-center">
         <!-- box video update -->
         <div
-            class="max-w-7xl w-full bg-gradient-to-r from-black to-yellow-500/10 p-2 rounded-xl flex   items-center justify-between mt-4">
+            class="max-w-7xl w-full bg-gradient-to-r from-black to-yellow-500/10 p-2 rounded-xl flex items-center justify-between mt-4">
             <div class="flex mr-4">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                     class="w-6 h-6 text-gray-600">
@@ -23,7 +23,7 @@
         <!-- box video update -->
         <!-- box video update -->
         <div
-            class="max-w-7xl w-full bg-gradient-to-r from-black to-yellow-500/10 p-2 rounded-xl flex   items-center justify-between mt-4">
+            class="max-w-7xl w-full bg-gradient-to-r from-black to-yellow-500/10 p-2 rounded-xl flex items-center justify-between mt-4">
             <div class="flex mr-4">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                     class="w-6 h-6 text-gray-600">
