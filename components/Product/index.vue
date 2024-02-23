@@ -1,5 +1,5 @@
 <template>
-    <NuxtLink to="/films/{{ slug }}" class="flex flex-col relative" v-if="true">
+    <NuxtLink to="/category/{{ category }}/{{ slug }}" class="flex flex-col relative" v-if="true">
         <div
             class="hover:backdrop-blur-sm hover:bg-black/60 w-full h-full absolute rounded-lg transition-all flex justify-center items-center overflow-hidden duration-150">
             <div class="-z-50 hover:z-50 flex flex-col items-center">
@@ -31,5 +31,6 @@
 </template>
 <script setup>
 const AlertStatus = ref(true)
-const {slug} = useRoute().params
+const slug = useRoute().params.slug
+const category = useRoute().params.category
 </script>

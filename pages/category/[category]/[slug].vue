@@ -1,6 +1,6 @@
 <template>
-    <div class="bg-gray-800 relative h-screen flex flex-col items-center">
-        <div class="bg-gray-800 absolute md:h-full w-full top-36 lg:top-24 flex flex-col lg:flex-row items-center">
+    <div class="bg-gray-800 h-screen flex flex-col items-center">
+        <div class="bg-gray-800 md:h-full w-full top-36 lg:top-24 flex flex-col lg:flex-row items-center">
             <img class="object-cover object-center rounded-xl lg:mr-24 w-72 h-auto -mt-10" src="~/public/The-Northman.jpg" alt="avatar">
             <div class="flex flex-col mr-3 space-y-2 lg:-mt-10 justify-center items-center lg:justify-normal lg:items-stretch"> 
                 <div class="flex lg:flex-col flex-row-reverse items-center lg:items-stretch gap-3 lg:gap-0">
@@ -96,8 +96,17 @@
                 </div>
             </div>
         </div>
-        
+        <div class="flex flex-col">
+            <div>
+                <WidgetDownload/>
+            </div>
+        </div>
     </div>
 </template>
 <script setup>
+
+// definePageMeta({
+//     layout: true
+// })
+
 </script>
