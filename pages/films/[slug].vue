@@ -1,11 +1,11 @@
 <template>
     <div class="bg-gray-800 h-screen flex flex-col items-center">
-        <div class="bg-gray-600 absolute h-full w-screen top-24 overflow-hidden flex flex-row items-center">
-            <img class="object-cover object-center relative rounded-xl mr-24 w-72 h-auto -mt-10" src="~/public/The-Northman.jpg" alt="avatar">
-            <div class="flex flex-col mr-3 space-y-2 -mt-14"> 
-                <div class="flex flex-col">
+        <div class="bg-gray-600 absolute h-full w-full top-24 overflow-hidden flex flex-col lg:flex-row items-center">
+            <img class="object-cover object-center rounded-xl lg:mr-24 w-72 h-auto -mt-10" src="~/public/The-Northman.jpg" alt="avatar">
+            <div class="flex flex-col mr-3 space-y-2 lg:-mt-10 justify-center items-center lg:justify-normal lg:items-stretch"> 
+                <div class="flex lg:flex-col flex-row-reverse items-center lg:items-stretch gap-3 lg:gap-0">
                     <span class="text-white font-medium text-xl capitalize">Reacher</span>
-                    <span class="text-white font-medium text-sm">ریچر</span>
+                    <span class="text-white font-medium text-sm text-start">ریچر</span>
                 </div>
                 <div class="flex flex-row items-center">
                     <nuxt-link to="https://www.imdb.com/title/tt9288030" class="bg-yellow-500 outline-none px-1 py-1 w-14 text-center uppercase rounded-md">
@@ -29,7 +29,7 @@
                         </NuxtLink>
                     </div>
                 </div>
-                <div class="mt-2">
+                <div class="mt-2 flex flex-col justify-center items-center lg:justify-normal lg:items-stretch">
                     <div class="mt-3 flex flex-row items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 text-white">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
@@ -64,7 +64,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mt-5 flex flex-col">
+                    <div class="mt-5 flex flex-col items-center lg:items-stretch">
                         <div class="text-white text-sm">
                             <span>کارگردان :</span>
                             <span> Christopher Nolan</span>
@@ -97,7 +97,7 @@
                         </div>
                     </div>
                     <div class="mt-2">
-                        <p class="text-base text-balance text-white">جک ریچر به جرم قتل دستگیر شد و اکنون پلیس به کمک او نیاز دارد. بر اساس کتاب های لی چایلد.</p>
+                        <p class="text-base text-pretty text-white">جک ریچر به جرم قتل دستگیر شد و اکنون پلیس به کمک او نیاز دارد. بر اساس کتاب های لی چایلد.</p>
                     </div>
                 </div>
             </div>
@@ -105,4 +105,5 @@
     </div>
 </template>
 <script setup>
+
 </script>
