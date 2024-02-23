@@ -1,48 +1,42 @@
 <template>
-    <div class="bg-gray-800 h-screen flex flex-col items-center">
-        <div class="bg-gray-600 absolute h-full w-full top-24 overflow-hidden flex flex-col lg:flex-row items-center">
+    <div class="bg-gray-800 relative h-screen flex flex-col items-center">
+        <div class="bg-gray-800 absolute md:h-full w-full top-36 lg:top-24 flex flex-col lg:flex-row items-center">
             <img class="object-cover object-center rounded-xl lg:mr-24 w-72 h-auto -mt-10" src="~/public/The-Northman.jpg" alt="avatar">
             <div class="flex flex-col mr-3 space-y-2 lg:-mt-10 justify-center items-center lg:justify-normal lg:items-stretch"> 
                 <div class="flex lg:flex-col flex-row-reverse items-center lg:items-stretch gap-3 lg:gap-0">
                     <span class="text-white font-medium text-xl capitalize">Reacher</span>
                     <span class="text-white font-medium text-sm text-start">ریچر</span>
                 </div>
-                <div class="flex flex-row items-center">
+                <div class="flex flex-wrap gap-2 justify-center lg:justify-normal items-center">
                     <nuxt-link to="https://www.imdb.com/title/tt9288030" class="bg-yellow-500 outline-none px-1 py-1 w-14 text-center uppercase rounded-md">
                         <span class="font-extrabold">imdb</span>
                     </nuxt-link>
-                    <div class="mr-2">
+                    <div>
                         <span class="text-white text-sm font-medium">10/<span class="text-xl font-bold">8.1</span></span>
                     </div>
-                    <div class="mr-3 flex flex-row items-center">
-                        <div class="border-2 border-white px-2 py-0 rounded-md text-center">
-                            <span class="font-medium text-white text-xs">17</span>
-                        </div>
-                        <div class="border-2 border-white px-2 py-0 rounded-md text-center mr-2">
-                            <span class="font-medium text-white text-sm">سافت ساب</span>
-                        </div>
-                        <div class="border-2 border-white px-2 py-0 rounded-md text-center mr-2">
-                            <span class="font-medium text-white text-xs">8</span>
-                        </div>
-                        <NuxtLink to="/productlist/" class="border-2 border-white px-2 py-0 rounded-md text-center mr-2">
-                            <span class="font-medium text-white text-base capitalize">Amazon</span>
-                        </NuxtLink>
+                    <div class="border-2 border-white px-2 py-0 rounded-md text-center">
+                        <span class="font-medium text-white text-xs">17</span>
                     </div>
+                    <div class="border-2 border-white px-2 py-0 rounded-md text-center mr-1">
+                        <span class="font-medium text-white text-sm">سافت ساب</span>
+                    </div>
+                    <div class="border-2 border-white px-2 py-0 rounded-md text-center mr-1">
+                        <span class="font-medium text-white text-xs">8</span>
+                    </div>
+                    <NuxtLink to="/productlist/" class="border-2 border-white px-2 py-0 rounded-md text-center mr-1">
+                        <span class="font-medium text-white text-base capitalize">Amazon</span>
+                    </NuxtLink>
                 </div>
                 <div class="mt-2 flex flex-col justify-center items-center lg:justify-normal lg:items-stretch">
-                    <div class="mt-3 flex flex-row items-center">
+                    <div class="mt-3 flex flex-wrap justify-center md:justify-normal items-center gap-3">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 text-white">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
                         </svg>
-                        <div class="mr-2 flex flex-row items-center gap-2">
-                            <span class="text-white font-medium text-xs text-pretty">مدت زمان : هر قسمت میانگین 45 دقیقه</span> |
-                            <div class="flex flex-row text-xs text-white">
-                                <nuxt-link to="/productlist/" class="duration-500 hover:text-yellow-400">اکشن</nuxt-link>
-                                <nuxt-link to="/productlist/" class="duration-500 hover:text-yellow-400 mr-2">جنایی</nuxt-link>
-                                <nuxt-link to="/productlist/" class="duration-500 hover:text-yellow-400 mr-2">درام</nuxt-link>
-                            </div> |
-                            <span class="text-white text-xs font-medium">محصول : <nuxt-link to="/productlist/" class="duration-500 hover:text-yellow-400">آمریکا</nuxt-link></span>
-                        </div>
+                        <span class="text-white font-medium text-xs text-pretty">مدت زمان : هر قسمت میانگین 45 دقیقه</span>|
+                        <nuxt-link to="/productlist/" class="duration-500 hover:text-yellow-400 text-xs text-white">اکشن</nuxt-link>
+                        <nuxt-link to="/productlist/" class="duration-500 hover:text-yellow-400 text-xs text-white">جنایی</nuxt-link>
+                        <nuxt-link to="/productlist/" class="duration-500 hover:text-yellow-400 text-xs text-white">درام</nuxt-link>|
+                        <span class="text-white text-xs font-medium">محصول : <nuxt-link to="/productlist/" class="duration-500 hover:text-yellow-400">آمریکا</nuxt-link></span>
                     </div>
                     <div class="mt-2 flex flex-row items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 text-white">
@@ -69,7 +63,7 @@
                             <span>کارگردان :</span>
                             <span> Christopher Nolan</span>
                         </div>
-                        <div class="text-white text-sm mt-3 flex flex-row items-center gap-2">
+                        <div class="text-white text-sm mt-3 flex flex-wrap justify-center lg:justify-normal items-center gap-2">
                             <span>ستارگان :</span>
                             <span>Cillian Murphy</span>
                             <span>Cillian Murphy</span>
@@ -102,8 +96,8 @@
                 </div>
             </div>
         </div>
+        
     </div>
 </template>
 <script setup>
-
 </script>
