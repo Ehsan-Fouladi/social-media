@@ -1,6 +1,6 @@
 <template>
     <div class="bg-gray-800 flex flex-col items-center">
-        <div class="bg-gray-800 md:h-screen w-full flex flex-col lg:flex-row items-center">
+        <div class="md:h-screen w-full flex flex-col lg:flex-row items-center">
             <img class="object-cover object-center rounded-xl lg:mr-24 w-72 h-auto mt-3 md:-mt-10" src="~/public/The-Northman.jpg" alt="avatar" draggable="false">
             <div class="flex flex-col mr-3 space-y-2 lg:-mt-10 justify-center items-center lg:justify-normal lg:items-stretch"> 
                 <div class="flex lg:flex-col flex-row-reverse items-center lg:items-stretch gap-3 lg:gap-0">
@@ -96,11 +96,17 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="flex flex-col">
-            <div>
+        <div class="flex flex-row justify-center md:mt-56 lg:-mt-24 bg-slate-700 w-full">
+            <div class="w-56 md:w-72 lg:w-96">
                 <WidgetDownload/>
             </div>
-        </div> -->
+            <div class="w-56 md:w-72 lg:w-96">
+                <WidgetTitleRelated/>
+            </div>
+            <div class="w-56 md:w-72 lg:w-96">
+                <WidgetComments/>
+            </div>
+        </div>
     </div>
 </template>
 <script setup>
