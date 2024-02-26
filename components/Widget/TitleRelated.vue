@@ -13,5 +13,5 @@
     </div>
 </template>
 <script setup>
-const active_section = ref(2)
+const active_section = ref(3)
 </script>
