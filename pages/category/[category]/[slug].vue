@@ -116,21 +116,33 @@
                 </div>
             </div>
         </div>
-        <div class="flex flex-col gap-2 justify-center items-center bg-slate-700 w-full p-4">
+        <div class="flex flex-col gap-2 justify-center items-center bg-slate-700 w-full p-4 lg:-mt-24">
             <!-- header -->
             <div class="flex items-center text-sm md:text-base lg:text-lg w-full lg:w-3/4">
                 <!-- download -->
-                <div class="text-center px-3 cursor-pointer py-2 font-medium rounded-r-lg w-1/3"
+                <div class="flex flex-row-reverse justify-center items-center gap-1 px-3 cursor-pointer py-2 font-medium rounded-r-lg w-1/3" 
                     :class="active_section === 1 ? 'bg-yellow-500' : 'bg-gray-600 text-white'" @click="active_section = 1">
-                    لینک های دانلود</div>
+                    <span>لینک های دانلود</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m9 13.5 3 3m0 0 3-3m-3 3v-6m1.06-4.19-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                    </svg>
+                </div>
                 <!-- related -->
-                <div class="text-center px-3 cursor-pointer py-2 font-medium w-1/3"
+                <div class="flex flex-row-reverse justify-center items-center gap-1 px-3 cursor-pointer py-2 font-medium w-1/3"
                     :class="active_section === 2 ? 'bg-yellow-500' : 'bg-gray-600 text-white'" @click="active_section = 2">
-                    لینک های مرتبط</div>
+                    <span>لینک های مرتبط</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z" />
+                    </svg>
+                </div>
                 <!-- comments -->
-                <div class="text-center px-3 cursor-pointer py-2 font-medium rounded-l-lg w-1/3"
+                <div class="flex flex-row-reverse justify-center items-center gap-1 px-3 cursor-pointer py-2 font-medium rounded-l-lg w-1/3"
                     :class="active_section === 3 ? 'bg-yellow-500' : 'bg-gray-600 text-white'" @click="active_section = 3">
-                    نظرات</div>
+                    <span>نظرات</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
+                    </svg>
+                </div>
             </div>
             <!-- content -->
             <div class="w-full lg:w-4/5">
@@ -139,12 +151,75 @@
                 <WidgetComments v-if="active_section === 3" />
             </div>
         </div>
+        <div class="w-full p-5 bg-slate-700 flex flex-col items-center justify-center">
+            <div class="flex flex-row-reverse justify-end items-center gap-2 text-white w-4/5">
+                <span>نکات قابل توجه قبل از دانلود</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m0-10.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.25-8.25-3.286Zm0 13.036h.008v.008H12v-.008Z" />
+                </svg>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-md w-full lg:w-4/5 mt-2">
+                <ul class="cursor-pointer text-gray-400 list-outside list-decimal mr-4 text-pretty font-medium text-sm leading-6">
+                    <li>تمامی عناوین سایت به صورت اصلی و بدون دستکاری می باشد.</li>
+                    <li>برای دانلود و اجرای فیلم ها حتما صفحه نرم افزارهای مورد نیاز را مشاهده کنید. <NuxtLink to="/" class="text-yellow-400"> نرم افزار موردنیاز</NuxtLink></li>
+                    <li>برای دریافت آخرین اطلاع رسانی ها حتما صفحه <NuxtLink to="/" class="text-yellow-400">اینستاگرام</NuxtLink> و کانال <NuxtLink to="/" class="text-yellow-400">تلگرام</NuxtLink> ما را دنبال کنید.</li>
+                    <li>توجه داشته باشید بعضی از فیلم ها بصورت زیرنویس چسبیده هستند و برای بعضی فایل زیرنویس برای دانلود قرار گرفته اند و زیرنویس چسبیده نیستند. توضیحات هر پست را با دقت مطالعه فرمایید.</li>
+                    <li> در صورتی که فیلم مورد نظر شما حاوی فایل زیرنویس بصورت جداگانه بود و اگر با مشکل بهم ریختگی زیرنویس مواجه بودید <NuxtLink to="/" class="text-yellow-400">اینجا کلیک کنید</NuxtLink></li>
+                    <li>جهت مشاهده آموزش هماهنگ کردن زیرنویس با فیلم <NuxtLink to="/" class="text-yellow-400">اینجا کلیک کنید</NuxtLink></li>
+                    <li>در صورت وجود مشکل در لینکها و ... از طریق پنل کاربری تیکت ارسال نمایید</li>
+                </ul>
+            </div>
+        </div>
+        <div class="w-full bg-slate-700 flex flex-col items-center justify-center self-center">
+            <div class="flex flex-row-reverse justify-end items-center gap-2 text-white w-4/5">
+                <span>برچسب ها</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
+                </svg>
+            </div>
+            <div class="mt-2 flex flex-wrap gap-2 w-3/4">
+                <div class="px-2 py-1 flex justify-center items-center rounded-xl bg-gray-800 w-auto hover:bg-gray-700 duration-500 cursor-pointer">
+                    <span class="text-gray-400 hover:text-yellow-400 duration-500 font-medium text-sm text-pretty">
+                        دانلود سریال Reacher
+                    </span>
+                </div>
+                <div class="px-2 py-1 flex justify-center items-center rounded-xl bg-gray-800 w-auto hover:bg-gray-700 duration-500 cursor-pointer">
+                    <span class="text-gray-400 hover:text-yellow-400 duration-500 font-medium text-sm text-pretty"> 
+                        زیرنویس فارسی سریال Reacher
+                    </span>
+                </div>
+                <div class="px-2 py-1 flex justify-center items-center rounded-xl bg-gray-800 w-auto hover:bg-gray-700 duration-500 cursor-pointer">
+                    <span class="text-gray-400 hover:text-yellow-400 duration-500 font-medium text-sm text-pretty"> 
+                        زیرنویس فارسی فصل دوم سریال Reacher
+                    </span>
+                </div>
+                <div class="px-2 py-1 flex justify-center items-center rounded-xl bg-gray-800 w-auto hover:bg-gray-700 duration-500 cursor-pointer">
+                    <span class="text-gray-400 hover:text-yellow-400 duration-500 font-medium text-sm text-pretty"> 
+                        سریال Reacher با زیرنویس
+                    </span>
+                </div>
+                <div class="px-2 py-1 flex justify-center items-center rounded-xl bg-gray-800 w-auto hover:bg-gray-700 duration-500 cursor-pointer">
+                    <span class="text-gray-400 hover:text-yellow-400 duration-500 font-medium text-sm text-pretty"> 
+                        سریال Reacher فصل دوم بدون سانسور 
+                    </span>
+                </div>
+                <div class="px-2 py-1 flex justify-center items-center rounded-xl bg-gray-800 w-auto hover:bg-gray-700 duration-500 cursor-pointer">
+                    <span class="text-gray-400 hover:text-yellow-400 duration-500 font-medium text-sm text-pretty"> 
+                        سریال ریچر Reacher 2022
+                    </span>
+                </div>
+                <div class="px-2 py-1 flex justify-center items-center rounded-xl bg-gray-800 w-auto hover:bg-gray-700 duration-500 cursor-pointer">
+                    <span class="text-gray-400 hover:text-yellow-400 duration-500 font-medium text-sm text-pretty"> 
+                        فصل دوم سریال Reacher
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="w-full">
+            <BodyFooter/>
+        </div>
     </div>
 </template>
 <script setup>
-
-// definePageMeta({
-//     layout: false
-// })
 const active_section = ref(1)
 </script>
