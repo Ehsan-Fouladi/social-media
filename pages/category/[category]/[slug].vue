@@ -118,7 +118,7 @@
         </div>
         <div class="flex flex-col gap-2 justify-center items-center bg-slate-700 w-full p-4">
             <!-- header -->
-            <div class="flex items-center gap-1 text-sm md:text-base lg:text-lg w-full lg:w-1/2">
+            <div class="flex items-center text-sm md:text-base lg:text-lg w-full lg:w-3/4">
                 <!-- download -->
                 <div class="text-center px-3 cursor-pointer py-2 font-medium rounded-r-lg w-1/3"
                     :class="active_section === 1 ? 'bg-yellow-500' : 'bg-gray-600 text-white'" @click="active_section = 1">
@@ -133,7 +133,7 @@
                     نظرات</div>
             </div>
             <!-- content -->
-            <div class="w-full lg:w-1/2">
+            <div class="w-full lg:w-4/5">
                 <WidgetDownload v-if="active_section === 1" />
                 <WidgetTitleRelated v-if="active_section === 2" />
                 <WidgetComments v-if="active_section === 3" />

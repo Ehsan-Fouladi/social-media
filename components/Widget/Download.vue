@@ -1,10 +1,10 @@
 <template>
     <!-- content -->
-    <div class="flex flex-col justify-center items-center w-full bg-slate-700">
+    <div class="flex flex-col justify-center items-center w-full bg-slate-800 p-5 rounded-lg">
         <div class="w-full flex flex-col gap-2 mt-2 relative">
             <div class="flex flex-row justify-between items-center w-full">
                 <span class="text-white font-medium text-sm sm:text-base text-pretty">دانلود فصل اول کامل</span>
-                <span class="text-white bg-gray-700 px-2 py-2 font-medium rounded-lg text-xs sm:text-sm text-pretty">زیرنویس
+                <span class="text-white bg-gray-600 px-2 py-2 font-medium rounded-lg text-xs sm:text-sm text-pretty">زیرنویس
                     فارسی چسبیده</span>
             </div>
             <div class="flex flex-row justify-between items-center w-full" v-if="false">
@@ -45,7 +45,7 @@
         <div class="w-full flex flex-col gap-2 mt-5 relative">
             <div class="flex flex-row justify-between items-center w-full">
                 <span class="text-white font-medium text-sm sm:text-base text-pretty">دانلود فصل اول کامل</span>
-                <span class="text-white bg-gray-700 px-2 py-2 font-medium rounded-lg text-xs sm:text-sm text-pretty">زیرنویس
+                <span class="text-white bg-gray-600 px-2 py-2 font-medium rounded-lg text-xs sm:text-sm text-pretty">زیرنویس
                     فارسی چسبیده</span>
             </div>
             <div
