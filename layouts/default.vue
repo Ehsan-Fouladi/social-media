@@ -82,39 +82,44 @@ function ScrollPosition() {
                             <NuxtLink to="/"
                                 class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700 duration-500">
                                 <span
+                                    class="text-gray-300 font-medium text-nowrap hover:text-purple-500 duration-500">صفحه اصلی</span>
+                            </NuxtLink>
+                            <NuxtLink to="/productlist/"
+                                class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700 duration-500">
+                                <span
                                     class="text-gray-300 font-medium text-nowrap hover:text-purple-500 duration-500">فیلم</span>
                             </NuxtLink>
-                            <NuxtLink to="/"
+                            <NuxtLink to="/productlist/"
                                 class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700 duration-500">
                                 <span
                                     class="text-gray-300 font-medium text-nowrap hover:text-purple-500 duration-500">سریال</span>
                             </NuxtLink>
-                            <NuxtLink to="/"
+                            <NuxtLink to="/productlist/"
                                 class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700 duration-500">
                                 <span
                                     class="text-gray-300 font-medium text-nowrap hover:text-purple-500 duration-500">انیمه</span>
                             </NuxtLink>
-                            <NuxtLink to="/"
+                            <NuxtLink to="/productlist/"
                                 class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700 duration-500">
                                 <span class="text-gray-300 font-medium text-nowrap hover:text-purple-500 duration-500">کره
                                     ای</span>
                             </NuxtLink>
-                            <NuxtLink to="/"
+                            <NuxtLink to="/productlist/"
                                 class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700 duration-500">
                                 <span class="text-gray-300 font-medium text-nowrap hover:text-purple-500 duration-500">دوبله
                                     فارسی</span>
                             </NuxtLink>
-                            <NuxtLink to="/"
+                            <NuxtLink to="/productlist/"
                                 class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700 duration-500">
                                 <span
                                     class="text-gray-300 font-medium text-nowrap hover:text-purple-500 duration-500">خارجی</span>
                             </NuxtLink>
-                            <NuxtLink to="/"
+                            <NuxtLink to="/productlist/"
                                 class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700 duration-500">
                                 <span
                                     class="text-gray-300 font-medium text-nowrap hover:text-purple-500 duration-500">مانگا</span>
                             </NuxtLink>
-                            <NuxtLink to="/"
+                            <NuxtLink to="/productlist/"
                                 class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700 duration-500">
                                 <span
                                     class="text-gray-300 font-medium text-nowrap hover:text-purple-500 duration-500">مانهوا</span>
@@ -182,28 +187,28 @@ function ScrollPosition() {
                         <NuxtLink to="/" class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700">
                             <span class="text-gray-300 font-medium text-nowrap hover:text-purple-500">صفحه اصلی</span>
                         </NuxtLink>
-                        <NuxtLink to="/" class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700">
+                        <NuxtLink to="/productlist/" class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700">
                             <span class="text-gray-300 font-medium text-nowrap hover:text-purple-500">فیلم</span>
                         </NuxtLink>
-                        <NuxtLink to="/" class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700">
+                        <NuxtLink to="/productlist/" class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700">
                             <span class="text-gray-300 font-medium text-nowrap hover:text-purple-500">سریال</span>
                         </NuxtLink>
-                        <NuxtLink to="/" class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700">
+                        <NuxtLink to="/productlist/" class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700">
                             <span class="text-gray-300 font-medium text-nowrap hover:text-purple-500">انیمه</span>
                         </NuxtLink>
-                        <NuxtLink to="/" class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700">
+                        <NuxtLink to="/productlist/" class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700">
                             <span class="text-gray-300 font-medium text-nowrap hover:text-purple-500">کره ای</span>
                         </NuxtLink>
-                        <NuxtLink to="/" class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700">
+                        <NuxtLink to="/productlist/" class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700">
                             <span class="text-gray-300 font-medium text-nowrap hover:text-purple-500">دوبله فارسی</span>
                         </NuxtLink>
-                        <NuxtLink to="/" class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700">
+                        <NuxtLink to="/productlist/" class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700">
                             <span class="text-gray-300 font-medium text-nowrap hover:text-purple-500">خارجی</span>
                         </NuxtLink>
-                        <NuxtLink to="/" class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700">
+                        <NuxtLink to="/productlist/" class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700">
                             <span class="text-gray-300 font-medium text-nowrap hover:text-purple-500">مانگا</span>
                         </NuxtLink>
-                        <NuxtLink to="/" class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700">
+                        <NuxtLink to="/productlist/" class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700">
                             <span class="text-gray-300 font-medium text-nowrap hover:text-purple-500">مانهوا</span>
                         </NuxtLink>
                     </div>

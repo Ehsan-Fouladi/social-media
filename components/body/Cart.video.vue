@@ -11,8 +11,8 @@
                 </svg>
                 <span class="text-white font-medium px-3">فیلم های جدید</span>
             </div>
-            <a href="#" target="_blank" class="bg-yellow-500 px-3 py-1 text-xs rounded-md rounded-bl-3xl">مشاهده بیشتر >
-            </a>
+            <NuxtLink to="/productlist/" target="_blank" class="bg-yellow-500 px-3 py-1 text-xs rounded-md rounded-bl-3xl">مشاهده بیشتر >
+            </NuxtLink>
         </div>
 
         <div class="md:w-[162vh] w-96 h-fit p-4 mt-4 md:mr-8">
@@ -33,8 +33,8 @@
                 </svg>
                 <span class="text-white font-medium px-3">سریال های بروز شده</span>
             </div>
-            <a href="#" target="_blank" class="bg-yellow-500 px-3 py-1 text-xs rounded-md rounded-bl-3xl">مشاهده بیشتر >
-            </a>
+            <NuxtLink to="/productlist/" target="_blank" class="bg-yellow-500 px-3 py-1 text-xs rounded-md rounded-bl-3xl">مشاهده بیشتر >
+            </NuxtLink>
         </div>
 
         <div class="md:w-[162vh] w-96 h-fit p-4 mt-4 md:mr-8">

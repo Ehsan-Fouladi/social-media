@@ -2,9 +2,9 @@
     <!-- header -->
     <div class="w-full h-16 top-0 flex flex-row items-center bg-gray-800 overflow-hidden sticky z-30">
         <div class="mr-10 flex flex-row items-center justify-between w-full relative">
-            <div class="hidden lg:block">
+            <NuxtLink to="/" class="hidden lg:block">
                 <img class="object-cover hover:scale-110 duration-500" draggable="false" src="https://aiofilm.click/wp-content/uploads/2023/08/logo.png" alt="avatar">
-            </div>
+            </NuxtLink>
             <div class="flex flex-row items-center gap-2 text-white lg:hidden" v-if="menu" @click="clickMenu">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"              stroke="currentColor" class="size-8" >
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
