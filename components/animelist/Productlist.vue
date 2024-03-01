@@ -1,11 +1,11 @@
 <template>
     <div class="bg-gray-900">
         <div class="flex flex-col justify-center items-center">
-            <div class="bg-gradient-to-r from-gray-800 via-gray-800 to-yellow-900 px-4 py-4 w-8/12 lg:mr-14 mt-5 rounded">
+            <div class="bg-gradient-to-r from-gray-800 via-gray-800 to-yellow-900 px-4 py-4 w-9/12 sm:w-8/12 lg:mr-14 mt-5 rounded">
                 <span class="text-white font-medium text-xl">بایگانی‌ها: انیمه</span> 
             </div>
             <!-- card -->
-            <div class="md:w-[162vh] w-96 h-fit p-4 mt-4 md:mr-8">
+        <div class="md:w-[162vh] w-96 h-fit p-4 mt-4 md:mr-8">
             <div class="grid grid-flow-row grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 overflow-auto">
                 <Product v-for="item in 15" :key="item"/>
             </div>
