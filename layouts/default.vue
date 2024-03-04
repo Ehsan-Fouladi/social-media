@@ -36,7 +36,7 @@ function ScrollPosition() {
         header.classList.add('bg-gray-900')
     }
 
-    if (scrolled <= 99.72) {
+    if (scrolled <= 95.50) {
         footer.classList.add('backdrop-blur-lg')
         footer.classList.add('bg-gray-800/70')
         footer.classList.remove('bg-gray-900')
@@ -55,7 +55,7 @@ function ScrollPosition() {
                 <!-- menu -->
                 <div class="flex items-center lg:ml-20 xl:ml-0 relative">
                     <img class="object-cover w-full h-full hover:scale-110 duration-500" draggable="false"
-                        src="https://aiofilm.click/wp-content/uploads/2023/08/logo.png" alt="avatar">
+                        src="~/public/logo.png" alt="logo">
                     <div class="mr-7 hidden md:block" v-if="menu" @click="clickMenu">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-12 text-white cursor-pointer">
@@ -71,7 +71,7 @@ function ScrollPosition() {
                         class="absolute right-0 h-dvh -top-0 w-96 p-4 z-50 bg-gray-800 overflow-auto rounded-l-lg max-w-md">
                         <div class="flex flex-row justify-between items-center mt-3">
                             <img class="object-cover hover:scale-110 duration-500" draggable="false"
-                                src="https://aiofilm.click/wp-content/uploads/2023/08/logo.png" alt="avatar">
+                                src="~/public/logo.png" alt="logo">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-12 text-white cursor-pointer">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
