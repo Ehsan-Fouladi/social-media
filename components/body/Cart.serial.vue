@@ -12,7 +12,7 @@
             </NuxtLink>
         </div>
         
-        <div class="md:w-[162vh] w-96 h-fit p-4 mt-4 md:mr-8">
+        <div class="lg:w-[157vh] md:w-[162vh] w-96 h-fit p-4 mt-4 md:mr-8">
             <div class="flex flex-row gap-3 overflow-auto">
                 <Product v-for="item in 10" :key="item"/>
             </div>
@@ -30,7 +30,7 @@
             </a>
         </div>
         
-        <div class="md:w-[162vh] w-96 h-fit p-4 mt-4 md:mr-8">
+        <div class="lg:w-[157vh] md:w-[162vh] w-96 h-fit p-4 mt-4 md:mr-8">
             <div class="flex flex-row gap-3 overflow-auto">
                 <Product v-for="item in 10" :key="item"/>
             </div>

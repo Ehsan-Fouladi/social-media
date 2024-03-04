@@ -2,7 +2,7 @@
     <!-- carts -->
     <section>
         <div class="flex flex-row justify-center items-center">
-            <div class="w-screen h-screen bg-no-repeat bg-center back -mt-16"></div>
+            <div class="w-screen h-screen bg-no-repeat bg-center back -mt-20"></div>
             <div class="absolute">
                 <div class="flex md:mr-10">
                     <div class="flex justify-center items-center">
@@ -13,7 +13,7 @@
                     </div>
                 </div>
                 <!-- box -->
-                    <div class="md:w-[162vh] w-96 h-fit p-4 md:mt-6 md:mr-8">
+                    <div class="lg:w-[157vh] md:w-[162vh] w-96 h-fit p-4 md:mt-6 md:mr-8">
                         <div class="flex flex-row gap-3 overflow-auto">
                             <Product v-for="item in 12" :key="item"/>
                         </div>

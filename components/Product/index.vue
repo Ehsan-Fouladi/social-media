@@ -1,7 +1,7 @@
 <template>
     <NuxtLink to="/category/{{ category }}/{{ slug }}" class="flex flex-col relative" v-if="true">
         <div
-            class="hover:backdrop-blur-sm hover:bg-black/60 w-full h-full absolute rounded-lg transition-all flex justify-center items-center overflow-hidden duration-150">
+            class="hover:backdrop-blur-sm hover:bg-black/60 w-full h-full absolute rounded-lg flex justify-center items-center overflow-hidden">
             <div class="-z-50 hover:z-50 flex flex-col items-center">
                 <span class="text-white font-bold text-lg">walking</span>
                 <span class="mt-5 bg-red-600 px-2 py-1 outline-none text-xs font-medium rounded-md text-white" v-if="AlertStatus">درحال پخش</span>
