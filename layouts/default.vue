@@ -36,7 +36,7 @@ function ScrollPosition() {
         header.classList.add('bg-gray-900')
     }
 
-    if (scrolled <= 95.50) {
+    if (scrolled <= 97.50) {
         footer.classList.add('backdrop-blur-lg')
         footer.classList.add('bg-gray-800/70')
         footer.classList.remove('bg-gray-900')
