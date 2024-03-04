@@ -1,5 +1,5 @@
 <template>
-    <section class="flex flex-col lg:flex-row items-center justify-center gap-4 md:gap-6 relative p-3 overflow-hidden md:-mt-12">
+    <section class="flex flex-col lg:flex-row items-center justify-center gap-4 md:gap-6 relative p-3 overflow-hidden">
         <div class="bg-yellow-500 p-4 w-11/12 lg:w-2/5 rounded-2xl flex items-center justify-between lg:justify-around">
             <button class="rounded outline-none px-4 py-2 hover:bg-white border border-black text-xs font-medium hover:border-white duration-500 ease-in-out" target="_blank">ورود به چت</button>
             <h2 class="font-medium text-lg hidden lg:block">اتاق گفتگوی آیوفیلم در تلگرام</h2>
