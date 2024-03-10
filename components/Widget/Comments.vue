@@ -41,7 +41,7 @@
                 <span class="text-gray-300 font-medium text-pretty text-sm">جدید ترین</span>
             </div>
             <div class="border mt-2 border-gray-400"></div>
-            <div class="mt-5 border-2 border-indigo-500 rounded-md p-4">
+            <div class="mt-5 border-2 border-indigo-500 rounded-md p-4" v-for="i in 4">
                 <div class="flex flex-row gap-1">
                     <span class="text-gray-300 text-sm font-medium">ehsan .</span>
                     <span class="text-gray-300 text-sm font-medium">2 سال قبل</span>

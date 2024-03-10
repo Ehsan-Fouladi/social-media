@@ -138,7 +138,7 @@
                 <!-- comments -->
                 <div class="flex flex-row-reverse justify-center items-center gap-1 px-3 cursor-pointer py-2 font-medium rounded-l-lg w-1/3"
                     :class="active_section === 3 ? 'bg-yellow-500' : 'bg-gray-600 text-white'" @click="active_section = 3">
-                    <span>نظرات</span>
+                    <span>نظرات کاربران</span>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
                     </svg>
@@ -152,7 +152,7 @@
             </div>
         </div>
         <div class="w-full p-5 bg-slate-700 flex flex-col items-center justify-center">
-            <div class="flex flex-row-reverse justify-end items-center gap-2 text-white w-4/5">
+            <div class="flex flex-row-reverse justify-end items-center gap-2 text-white w-4/5 ml-16 md:ml-0">
                 <span>نکات قابل توجه قبل از دانلود</span>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m0-10.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.25-8.25-3.286Zm0 13.036h.008v.008H12v-.008Z" />
@@ -170,14 +170,14 @@
                 </ul>
             </div>
         </div>
-        <div class="w-full bg-slate-700 flex flex-col items-center justify-center self-center">
+        <div class="w-full bg-slate-700 flex flex-col md:items-center justify-center self-center">
             <div class="flex flex-row-reverse justify-end items-center gap-2 text-white w-4/5">
                 <span>برچسب ها</span>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
                 </svg>
             </div>
-            <div class="mt-2 flex flex-wrap gap-2 w-3/4">
+            <div class="mt-2 flex flex-wrap gap-2 w-3/4 mr-4 md:mr-0">
                 <div class="px-2 py-1 flex justify-center items-center rounded-xl bg-gray-800 w-auto hover:bg-gray-700 duration-500 cursor-pointer">
                     <span class="text-gray-400 hover:text-yellow-400 duration-500 font-medium text-sm text-pretty">
                         دانلود سریال Reacher
