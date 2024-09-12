@@ -1,7 +1,7 @@
 <script setup>
 const menu = ref(true)
-const menuMobile = ref(true)
-const SearchBox = ref(true)
+const menuMobile = ref(false)
+const SearchBox = ref(false)
 function clickMenu() {
     menu.value = !menu.value
 }
@@ -54,7 +54,7 @@ function ScrollPosition() {
             <div class="flex items-center md:justify-evenly justify-between">
                 <!-- menu -->
                 <div class="flex items-center lg:ml-20 xl:ml-0 relative">
-                    <img class="object-cover w-full h-full hover:scale-110 duration-500" draggable="false"
+                    <img class="object-cover w-32 hover:scale-110 duration-500" draggable="false"
                         src="~/public/logo.png" alt="logo">
                     <div class="mr-7 hidden md:block" v-if="menu" @click="clickMenu">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -65,10 +65,9 @@ function ScrollPosition() {
                     </div>
                     <div class="mr-7 hidden md:block" v-else @click="clickMenu"></div>
                 </div>
-                <transition enter-to-class="animate__animated animate__slideInRight"
-                    leave-to-class="animate__animated animate__slideOutRight">
+                <transition class="transition-all duration-500 ease-linear">
                     <div v-show="!menu" @click="clickMenu"
-                        class="absolute right-0 h-dvh -top-0 w-96 p-4 z-50 bg-gray-800 overflow-auto rounded-l-lg max-w-md">
+                        class="absolute right-0 h-dvh -top-0 w-96 p-4 z-50 bg-gray-800 overflow-auto rounded-l-lg max-w-md" :class="menu ? 'activeClose': 'activeOpen'">
                         <div class="flex flex-row justify-between items-center mt-3">
                             <img class="object-cover hover:scale-110 duration-500" draggable="false"
                                 src="~/public/logo.png" alt="logo">
@@ -80,49 +79,65 @@ function ScrollPosition() {
                         <div
                             class="flex flex-col mt-6 text-white p-4 space-y-5 cursor-pointer font-medium w-full transition-all">
                             <NuxtLink to="/"
-                                class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700 duration-500">
+                                class="px-3 py-3 hover:bg-gray-900 rounded-lg group duration-500">
                                 <span
-                                    class="text-gray-300 font-medium text-nowrap hover:text-purple-500 duration-500">صفحه اصلی</span>
+                                    class="text-gray-300 font-medium group-hover:text-gray-100 group-hover:mr-2 duration-500">
+                                    صفحه اصلی
+                                </span>
                             </NuxtLink>
                             <NuxtLink to="/productlist/"
-                                class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700 duration-500">
+                                class="px-3 py-3 hover:bg-gray-900 rounded-lg group duration-500">
                                 <span
-                                    class="text-gray-300 font-medium text-nowrap hover:text-purple-500 duration-500">فیلم</span>
+                                    class="text-gray-300 font-medium group-hover:text-gray-100 group-hover:mr-2 duration-500">
+                                    فیلم
+                                </span>
                             </NuxtLink>
                             <NuxtLink to="/productlist/"
-                                class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700 duration-500">
+                                class="px-3 py-3 hover:bg-gray-900 rounded-lg group duration-500">
                                 <span
-                                    class="text-gray-300 font-medium text-nowrap hover:text-purple-500 duration-500">سریال</span>
+                                    class="text-gray-300 font-medium group-hover:text-gray-100 group-hover:mr-2 duration-500">
+                                    سریال
+                                </span>
                             </NuxtLink>
                             <NuxtLink to="/productlist/"
-                                class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700 duration-500">
+                                class="px-3 py-3 hover:bg-gray-900 rounded-lg group duration-500">
                                 <span
-                                    class="text-gray-300 font-medium text-nowrap hover:text-purple-500 duration-500">انیمه</span>
+                                    class="text-gray-300 font-medium group-hover:text-gray-100 group-hover:mr-2 duration-500">
+                                    انیمه
+                                </span>
                             </NuxtLink>
                             <NuxtLink to="/productlist/"
-                                class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700 duration-500">
-                                <span class="text-gray-300 font-medium text-nowrap hover:text-purple-500 duration-500">کره
-                                    ای</span>
+                                class="px-3 py-3 hover:bg-gray-900 rounded-lg group duration-500">
+                                <span class="text-gray-300 font-medium group-hover:text-gray-100 group-hover:mr-2 duration-500">
+                                کره ای
+                                </span>
                             </NuxtLink>
                             <NuxtLink to="/productlist/"
-                                class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700 duration-500">
-                                <span class="text-gray-300 font-medium text-nowrap hover:text-purple-500 duration-500">دوبله
-                                    فارسی</span>
+                                class="px-3 py-3 hover:bg-gray-900 rounded-lg group duration-500">
+                                <span class="text-gray-300 font-medium group-hover:text-gray-100 group-hover:mr-2 duration-500">
+                                    دوبله فارسی
+                                </span>
                             </NuxtLink>
                             <NuxtLink to="/productlist/"
-                                class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700 duration-500">
+                                class="px-3 py-3 hover:bg-gray-900 rounded-lg group duration-500">
                                 <span
-                                    class="text-gray-300 font-medium text-nowrap hover:text-purple-500 duration-500">خارجی</span>
+                                    class="text-gray-300 font-medium group-hover:text-gray-100 group-hover:mr-2 duration-500">
+                                    خارجی
+                                </span>
                             </NuxtLink>
                             <NuxtLink to="/productlist/"
-                                class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700 duration-500">
+                                class="px-3 py-3 hover:bg-gray-900 rounded-lg group duration-500">
                                 <span
-                                    class="text-gray-300 font-medium text-nowrap hover:text-purple-500 duration-500">مانگا</span>
+                                    class="text-gray-300 font-medium group-hover:text-gray-100 group-hover:mr-2 duration-500">
+                                    مانگا
+                                </span>
                             </NuxtLink>
                             <NuxtLink to="/productlist/"
-                                class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700 duration-500">
+                                class="px-3 py-3 hover:bg-gray-900 rounded-lg group duration-500">
                                 <span
-                                    class="text-gray-300 font-medium text-nowrap hover:text-purple-500 duration-500">مانهوا</span>
+                                    class="text-gray-300 font-medium group-hover:text-gray-100 group-hover:mr-2 duration-500">
+                                    مانهوا
+                                </span>
                             </NuxtLink>
                         </div>
                     </div>
@@ -165,99 +180,110 @@ function ScrollPosition() {
             id="progressBar"></div>
         <!-- scroll progress bar -->
     </header>
-    <slot />
+    <NuxtPage />
     <nav id="footer" class="w-full h-auto flex flex-col sticky z-50 p-3 md:hidden transition-all duration-200 bg-gray-800/70 bottom-0">
         <div class="px-5 flex flex-row justify-between items-center">
             <!-- home -->
-            <div class="flex items-center bg-gray-700 px-2 py-1 rounded-lg">
+            <div class="flex items-center bg-gray-800 px-2 py-1 rounded-lg">
                 <NuxtLink to="/">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-8 text-white">
+                        stroke="currentColor" class="w-7 text-white">
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
                     </svg>
                 </NuxtLink>
             </div>
             <!-- menu -->
-            <transition enter-to-class="animate__animated animate__slideInLeft"
-                leave-to-class="animate__animated animate__slideOutLeft">
-                <div v-show="!menuMobile"
-                    class="absolute bg-black/90 backdrop-blur-lg  md:hidden -z-50 h-dvh w-dvw right-0 bottom-0 overflow-auto">
-                    <div class="h-screen flex flex-col justify-center items-center -mt-5 space-y-6">
-                        <NuxtLink to="/" class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700">
-                            <span class="text-gray-300 font-medium text-nowrap hover:text-purple-500">صفحه اصلی</span>
-                        </NuxtLink>
-                        <NuxtLink to="/productlist/" class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700">
-                            <span class="text-gray-300 font-medium text-nowrap hover:text-purple-500">فیلم</span>
-                        </NuxtLink>
-                        <NuxtLink to="/productlist/" class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700">
-                            <span class="text-gray-300 font-medium text-nowrap hover:text-purple-500">سریال</span>
-                        </NuxtLink>
-                        <NuxtLink to="/productlist/" class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700">
-                            <span class="text-gray-300 font-medium text-nowrap hover:text-purple-500">انیمه</span>
-                        </NuxtLink>
-                        <NuxtLink to="/productlist/" class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700">
-                            <span class="text-gray-300 font-medium text-nowrap hover:text-purple-500">کره ای</span>
-                        </NuxtLink>
-                        <NuxtLink to="/productlist/" class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700">
-                            <span class="text-gray-300 font-medium text-nowrap hover:text-purple-500">دوبله فارسی</span>
-                        </NuxtLink>
-                        <NuxtLink to="/productlist/" class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700">
-                            <span class="text-gray-300 font-medium text-nowrap hover:text-purple-500">خارجی</span>
-                        </NuxtLink>
-                        <NuxtLink to="/productlist/" class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700">
-                            <span class="text-gray-300 font-medium text-nowrap hover:text-purple-500">مانگا</span>
-                        </NuxtLink>
-                        <NuxtLink to="/productlist/" class="bg-gray-800 px-3 py-1 text-center rounded-md w-80 hover:bg-gray-700">
-                            <span class="text-gray-300 font-medium text-nowrap hover:text-purple-500">مانهوا</span>
-                        </NuxtLink>
-                    </div>
-                </div>
-            </transition>
-            <div class="flex items-center bg-gray-700 px-2 py-1 rounded-lg">
-                <div v-if="menuMobile" @click="clickMenuMobile">
+            <div class="flex items-center bg-gray-800 px-2 py-1 rounded-lg">
+                <div @click="clickMenuMobile">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="w-8 text-white cursor-pointer">
+                    stroke="currentColor" class="w-7 text-white cursor-pointer">
                     <path stroke-linecap="round" stroke-linejoin="round"
                         d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
+                    </svg>
+                </div>
             </div>
-            <div v-else @click="clickMenuMobile">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="w-8 text-white cursor-pointer">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-            </div>
-        </div>
-        <!-- search -->
-        <div class="flex items-center justify-center bg-gray-700 px-2 py-1 rounded-lg relative">
+            <!-- search -->
+            <div class="flex items-center bg-gray-800 px-2 py-1 rounded-lg">
             <div @click="SearchInput">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="w-8 text-white">
+                    stroke="currentColor" class="w-7 text-white">
                     <path stroke-linecap="round" stroke-linejoin="round"
                         d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
                 </svg>
             </div>
-        </div>
-        <transition enter-to-class="animate__animated animate__slideInLeft"
-            leave-to-class="animate__animated animate__slideOutLeft">
-            <div class="bg-black/70 backdrop-blur w-screen min-h-lvh absolute bottom-0 right-0 left-0 -z-50 flex justify-center items-center"
-                v-show="!SearchBox">
-                <form method="get" class="inline-block">
-                    <input type="search" name="q" placeholder="جستجوی سریع..."
-                        class="py-3 px-3 rounded-md bg-gray-700 text-gray-300 focus:text-base outline-none text-base font-medium w-96">
-                </form>
             </div>
-        </transition>
-        <!-- login -->
-        <div class="flex items-center bg-gray-700 px-2 py-1 rounded-lg">
+            <!-- login -->
+            <div class="flex items-center bg-gray-800 px-2 py-1 rounded-lg">
             <NuxtLink to="/auth/login/">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="w-8 text-white">
+                    stroke="currentColor" class="w-7 text-white">
                     <path stroke-linecap="round" stroke-linejoin="round"
                         d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
                 </svg>
             </NuxtLink>
+            </div>
+        </div>
+    </nav>
+    <!-- menu -->
+    <div class="top-0 right-0 left-0 bottom-0 fixed w-full h-full z-50" v-show="menuMobile" @click="clickMenuMobile">
+        <div class="bg-gray-900/70 backdrop-blur-lg w-full h-full absolute">
+            <div class="pt-10 px-10 flex flex-col w-full h-full overflow-auto">
+                    <div @click="!clickMenuMobile">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-9 text-white cursor-pointer">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </div>
+                    <div class="flex flex-col items-center w-full h-full pt-10 space-y-10">
+                        <NuxtLink to="/" class="bg-slate-800 w-52 py-2 rounded-lg text-center">
+                            <span class="text-white font-medium">صفحه اصلی</span>
+                        </NuxtLink>
+                        <NuxtLink to="/productlist/" class="bg-slate-800 w-52 py-2 rounded-lg text-center">
+                            <span class="text-white font-medium">انیمه</span>
+                        </NuxtLink>
+                        <NuxtLink to="/productlist/" class="bg-slate-800 w-52 py-2 rounded-lg text-center">
+                            <span class="text-white font-medium">فیلم کره ای</span>
+                        </NuxtLink>
+                        <NuxtLink to="/productlist/" class="bg-slate-800 w-52 py-2 rounded-lg text-center">
+                            <span class="text-white font-medium">فیلم ترکی</span>
+                        </NuxtLink>
+                        <NuxtLink to="/productlist/" class="bg-slate-800 w-52 py-2 rounded-lg text-center">
+                            <span class="text-white font-medium">سریال</span>
+                        </NuxtLink>
+                        <NuxtLink to="/productlist/" class="bg-slate-800 w-52 py-2 rounded-lg text-center">
+                            <span class="text-white font-medium">فیلم</span>
+                        </NuxtLink>
+                        <NuxtLink to="/productlist/" class="bg-slate-800 w-52 py-2 rounded-lg text-center">
+                            <span class="text-white font-medium">مانگا</span>
+                        </NuxtLink>
+                    </div>
+            </div>
         </div>
     </div>
-</nav></template>
+    <!-- search menu -->
+    <div class="top-0 right-0 left-0 bottom-0 fixed w-full h-full z-50" v-show="SearchBox">
+        <div class="bg-gray-900/70 backdrop-blur-lg w-full h-full absolute">
+            <div class="pt-10 px-5 flex flex-col w-full h-full">
+                <div class="flex flex-col justify-center items-center w-full h-full">
+                    <div @click="SearchInput" class="pb-10 w-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-9 text-white cursor-pointer">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </div>
+                    <input type="search" placeholder="جستجو ..." class="w-[22rem] px-3 py-3 rounded-lg bg-gray-600 outline-none placeholder:text-gray-100 text-white">
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<style scoped>
+.activeOpen {
+  @apply right-0 transition-all duration-700 ease-linear;
+}
+.activeClose {
+  @apply -right-2/4 transition-all duration-700 ease-linear;
+}
+</style>

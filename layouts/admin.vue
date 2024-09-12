@@ -24,7 +24,7 @@
             </div>
         </div>
     </div>
-    <slot/>
+    <NuxtPage />
     <!-- navbar -->
     <div class="h-full md:h-screen w-72 flex flex-col items-center bg-gray-800 relative" v-show="menu">
         <div class="flex flex-col items-center justify-center w-full">
