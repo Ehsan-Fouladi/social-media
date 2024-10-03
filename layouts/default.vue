@@ -55,7 +55,7 @@ function ScrollPosition() {
                 <!-- menu -->
                 <div class="flex items-center lg:ml-20 xl:ml-0 relative">
                     <img class="object-cover w-32 hover:scale-110 duration-500" draggable="false"
-                        src="~/public/logo.png" alt="logo">
+                        src="/image/logo.png" alt="logo">
                     <div class="mr-7 hidden md:block" v-if="menu" @click="clickMenu">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-12 text-white cursor-pointer">
@@ -70,7 +70,7 @@ function ScrollPosition() {
                         class="absolute right-0 h-dvh -top-0 w-96 p-4 z-50 bg-gray-800 overflow-auto rounded-l-lg max-w-md" :class="menu ? 'activeClose': 'activeOpen'">
                         <div class="flex flex-row justify-between items-center mt-3">
                             <img class="object-cover hover:scale-110 duration-500" draggable="false"
-                                src="~/public/logo.png" alt="logo">
+                                src="/image/logo.png" alt="logo">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-12 text-white cursor-pointer">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -85,54 +85,61 @@ function ScrollPosition() {
                                     صفحه اصلی
                                 </span>
                             </NuxtLink>
-                            <NuxtLink to="/productlist/"
+                            <NuxtLink to="/admin"
+                                      class="px-3 py-3 hover:bg-gray-900 rounded-lg group duration-500">
+                                  <span
+                                      class="text-gray-300 font-medium group-hover:text-gray-100 group-hover:mr-2 duration-500">
+                                      پنل کاربری
+                                  </span>
+                            </NuxtLink>
+                            <NuxtLink to="/productlist"
                                 class="px-3 py-3 hover:bg-gray-900 rounded-lg group duration-500">
                                 <span
                                     class="text-gray-300 font-medium group-hover:text-gray-100 group-hover:mr-2 duration-500">
                                     فیلم
                                 </span>
                             </NuxtLink>
-                            <NuxtLink to="/productlist/"
+                            <NuxtLink to="/productlist"
                                 class="px-3 py-3 hover:bg-gray-900 rounded-lg group duration-500">
                                 <span
                                     class="text-gray-300 font-medium group-hover:text-gray-100 group-hover:mr-2 duration-500">
                                     سریال
                                 </span>
                             </NuxtLink>
-                            <NuxtLink to="/productlist/"
+                            <NuxtLink to="/productlist"
                                 class="px-3 py-3 hover:bg-gray-900 rounded-lg group duration-500">
                                 <span
                                     class="text-gray-300 font-medium group-hover:text-gray-100 group-hover:mr-2 duration-500">
                                     انیمه
                                 </span>
                             </NuxtLink>
-                            <NuxtLink to="/productlist/"
+                            <NuxtLink to="/productlist"
                                 class="px-3 py-3 hover:bg-gray-900 rounded-lg group duration-500">
                                 <span class="text-gray-300 font-medium group-hover:text-gray-100 group-hover:mr-2 duration-500">
                                 کره ای
                                 </span>
                             </NuxtLink>
-                            <NuxtLink to="/productlist/"
+                            <NuxtLink to="/productlist"
                                 class="px-3 py-3 hover:bg-gray-900 rounded-lg group duration-500">
                                 <span class="text-gray-300 font-medium group-hover:text-gray-100 group-hover:mr-2 duration-500">
                                     دوبله فارسی
                                 </span>
                             </NuxtLink>
-                            <NuxtLink to="/productlist/"
+                            <NuxtLink to="/productlist"
                                 class="px-3 py-3 hover:bg-gray-900 rounded-lg group duration-500">
                                 <span
                                     class="text-gray-300 font-medium group-hover:text-gray-100 group-hover:mr-2 duration-500">
                                     خارجی
                                 </span>
                             </NuxtLink>
-                            <NuxtLink to="/productlist/"
+                            <NuxtLink to="/productlist"
                                 class="px-3 py-3 hover:bg-gray-900 rounded-lg group duration-500">
                                 <span
                                     class="text-gray-300 font-medium group-hover:text-gray-100 group-hover:mr-2 duration-500">
                                     مانگا
                                 </span>
                             </NuxtLink>
-                            <NuxtLink to="/productlist/"
+                            <NuxtLink to="/productlist"
                                 class="px-3 py-3 hover:bg-gray-900 rounded-lg group duration-500">
                                 <span
                                     class="text-gray-300 font-medium group-hover:text-gray-100 group-hover:mr-2 duration-500">
@@ -143,7 +150,7 @@ function ScrollPosition() {
                     </div>
                 </transition>
                 <!-- search -->
-                <div class="flex items-center hidden md:block">
+                <div class="md:flex items-center hidden">
                     <form method="get" class="flex justify-end items-center">
                         <input type="search" name="q" placeholder="جستجوی سریع..."
                             class="py-3 px-3 rounded-md bg-gray-700 text-gray-300 focus:text-base outline-none lg:w-full-screen md:w-96 text-base font-medium">
@@ -160,7 +167,7 @@ function ScrollPosition() {
                         <NuxtLink to="#"
                             class="rounded-sm duration-300 flex flex-row items-center justify-between peer hover:pe-3 mt-6">
                             <img class="object-cover object-center size-20 rounded-md hover:size-40 duration-500 delay-100"
-                                src="../../public/The-Northman.jpg" alt="image file">
+                                src="/image/The-Northman.jpg" alt="image file">
                             <span class="text-lg text-white font-medium hover:text-gray-500">walking</span>
                         </NuxtLink>
                     </div>
@@ -168,7 +175,8 @@ function ScrollPosition() {
                 <!-- box -->
                 <div class="flex items-center sm:mr-1 lg:mr-3 xl:mr-0">
                     <div class="bg-blue-700 px-3 py-2 relative rounded-lg block">
-                        <NuxtLink to="/auth/login/" class="text-white font-normal text-xs md:text-sm text-center">ورود / ثبت نام
+                        <NuxtLink to="/auth/login" class="text-white font-normal text-sm text-center text-nowrap">
+                          ورود / ثبت نام
                         </NuxtLink>
                     </div>
                 </div>
@@ -215,7 +223,7 @@ function ScrollPosition() {
             </div>
             <!-- login -->
             <div class="flex items-center bg-gray-800 px-2 py-1 rounded-lg">
-            <NuxtLink to="/auth/login/">
+            <NuxtLink to="/auth/login">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-7 text-white">
                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -229,35 +237,38 @@ function ScrollPosition() {
     <div class="top-0 right-0 left-0 bottom-0 fixed w-full h-full z-50" v-show="menuMobile" @click="clickMenuMobile">
         <div class="bg-gray-900/70 backdrop-blur-lg w-full h-full absolute">
             <div class="pt-10 px-10 flex flex-col w-full h-full overflow-auto">
-                    <div @click="!clickMenuMobile">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-9 text-white cursor-pointer">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    </div>
-                    <div class="flex flex-col items-center w-full h-full pt-10 space-y-10">
-                        <NuxtLink to="/" class="bg-slate-800 w-52 py-2 rounded-lg text-center">
-                            <span class="text-white font-medium">صفحه اصلی</span>
-                        </NuxtLink>
-                        <NuxtLink to="/productlist/" class="bg-slate-800 w-52 py-2 rounded-lg text-center">
-                            <span class="text-white font-medium">انیمه</span>
-                        </NuxtLink>
-                        <NuxtLink to="/productlist/" class="bg-slate-800 w-52 py-2 rounded-lg text-center">
-                            <span class="text-white font-medium">فیلم کره ای</span>
-                        </NuxtLink>
-                        <NuxtLink to="/productlist/" class="bg-slate-800 w-52 py-2 rounded-lg text-center">
-                            <span class="text-white font-medium">فیلم ترکی</span>
-                        </NuxtLink>
-                        <NuxtLink to="/productlist/" class="bg-slate-800 w-52 py-2 rounded-lg text-center">
-                            <span class="text-white font-medium">سریال</span>
-                        </NuxtLink>
-                        <NuxtLink to="/productlist/" class="bg-slate-800 w-52 py-2 rounded-lg text-center">
-                            <span class="text-white font-medium">فیلم</span>
-                        </NuxtLink>
-                        <NuxtLink to="/productlist/" class="bg-slate-800 w-52 py-2 rounded-lg text-center">
-                            <span class="text-white font-medium">مانگا</span>
-                        </NuxtLink>
-                    </div>
+              <div @click="!clickMenuMobile">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                     stroke="currentColor" class="w-9 text-white cursor-pointer">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </div>
+              <div class="flex flex-col items-center w-full h-full pt-10 space-y-10">
+                <NuxtLink to="/" class="bg-slate-800 w-52 py-2 rounded-lg text-center">
+                  <span class="text-white font-medium">صفحه اصلی</span>
+                </NuxtLink>
+                <NuxtLink to="/admin" class="bg-slate-800 w-52 py-2 rounded-lg text-center">
+                  <span class="text-white font-medium">پنل کاربری</span>
+                </NuxtLink>
+                <NuxtLink to="/productlist" class="bg-slate-800 w-52 py-2 rounded-lg text-center">
+                  <span class="text-white font-medium">انیمه</span>
+                </NuxtLink>
+                <NuxtLink to="/productlist" class="bg-slate-800 w-52 py-2 rounded-lg text-center">
+                  <span class="text-white font-medium">فیلم کره ای</span>
+                </NuxtLink>
+                <NuxtLink to="/productlist" class="bg-slate-800 w-52 py-2 rounded-lg text-center">
+                  <span class="text-white font-medium">فیلم ترکی</span>
+                </NuxtLink>
+                <NuxtLink to="/productlist" class="bg-slate-800 w-52 py-2 rounded-lg text-center">
+                  <span class="text-white font-medium">سریال</span>
+                </NuxtLink>
+                <NuxtLink to="/productlist" class="bg-slate-800 w-52 py-2 rounded-lg text-center">
+                  <span class="text-white font-medium">فیلم</span>
+                </NuxtLink>
+                <NuxtLink to="/productlist" class="bg-slate-800 w-52 py-2 rounded-lg text-center">
+                  <span class="text-white font-medium">مانگا</span>
+                </NuxtLink>
+              </div>
             </div>
         </div>
     </div>

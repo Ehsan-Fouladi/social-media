@@ -2,7 +2,7 @@
     <div class="bg-gray-800 flex flex-col items-center">
         <div class="md:h-screen w-full flex flex-col lg:flex-row items-center">
             <img class="object-cover object-center rounded-xl lg:mr-24 w-72 h-auto mt-3 md:-mt-10"
-                src="~/public/The-Northman.jpg" alt="avatar" draggable="false">
+                src="/image/The-Northman.jpg" alt="avatar" draggable="false">
             <div
                 class="flex flex-col mr-3 space-y-2 lg:-mt-10 justify-center items-center lg:justify-normal lg:items-stretch">
                 <div class="flex lg:flex-col flex-row-reverse items-center lg:items-stretch gap-3 lg:gap-0">

@@ -8,7 +8,7 @@
                 <span class="mt-5 bg-green-600 px-2 py-1 outline-none text-xs font-medium rounded-md text-white" v-else>اتمام پخش</span>
             </div>
         </div>
-        <img class="max-w-sm h-60 md:h-80 rounded-lg object-cover object-center" src="~/public/The-Northman.jpg" alt="avatar" draggable="false">
+        <img class="max-w-sm h-60 md:h-80 rounded-lg object-cover object-center" src="/image/The-Northman.jpg" alt="avatar" draggable="false">
         <div class="bg-white rounded-b absolute px-1 left-5 bg-opacity-60">
             <span class="text-sm font-normal">17+</span>
         </div>

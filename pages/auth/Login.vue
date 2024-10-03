@@ -1,6 +1,6 @@
 <template>
     <div class="flex justify-center items-center overflow-hidden h-screen">
-        <img class="w-screen h-screen object-cover object-center" src="~/public/subtle-prism.svg" alt="avatar">
+        <img class="w-screen h-screen object-cover object-center" src="/image/subtle-prism.svg" alt="avatar">
         <div class="bg-gray-700/30 w-80 sm:w-96 xl:w-[30%] h-auto p-4 z-50 mx-auto rounded-md backdrop-blur-md absolute flex flex-col justify-center">
             <span class="text-black/70 capitalize italic font-medium text-2xl text-center">login</span>
             <form action="#" method="post" class="p-2 mt-5 flex flex-col justify-center">
