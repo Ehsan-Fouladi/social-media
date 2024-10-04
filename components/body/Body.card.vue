@@ -1,8 +1,28 @@
 <template>
-  <!-- carts -->
   <div class="flex justify-center items-center w-full h-full relative">
-    <div class="w-full h-[500px] bg-cover bg-center bg-no-repeat md:h-[580px] background-image"></div>
-    <div class="absolute w-full h-full p-3 md:p-4 lg:p-6 flex items-center justify-center">
+    <div class="w-full h-full">
+      <Swiper
+          :modules="[SwiperAutoplay, SwiperEffectCreative]"
+          :loop="true"
+          :effect="'creative'"
+          :autoplay="{
+             delay: 2000,
+             disableOnInteraction: true,
+          }"
+          :creative-effect="{
+              prev: {
+                shadow: false,
+                translate: ['-20%', 0, -1],
+              },
+              next: {
+                translate: ['100%', 0, 0],
+          }}">
+        <SwiperSlide v-for="item in data" :key="item.image">
+          <img class="w-full h-[500px] bg-cover bg-center bg-no-repeat md:h-[580px] object-cover" :src="item.image" :alt="item.name" draggable="false">
+        </SwiperSlide>
+      </Swiper>
+    </div>
+    <div class="absolute w-full h-full p-3 md:p-4 lg:p-6 flex items-center justify-center z-10">
       <div class="flex flex-col justify-center items-start gap-5 w-full lg:w-5/6 h-full">
         <div class="flex items-center pr-1 sm:pr-0">
           <svg class="w-8 text-yellow-300 opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
@@ -23,10 +43,17 @@
       </div>
     </div>
   </div>
-  <!-- carts -->
 </template>
-<style scoped>
-div .background-image {
-  background-image: url('/image/background1.jpg');
-}
-</style>
+<style scoped></style>
+<script setup>
+const data = ref([
+  {
+    image: "/image/background1.jpg",
+    name: "background1"
+  },
+  {
+    image: "/image/background2.jpg",
+    name: "background2"
+  },
+])
+</script>

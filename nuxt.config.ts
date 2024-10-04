@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/main.css'],
+  modules: ['nuxt-swiper'],
   postcss: {
     plugins: {
       tailwindcss: {},

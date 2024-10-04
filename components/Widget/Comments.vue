@@ -14,23 +14,20 @@
                 <span class="ml-2 py-1 px-2 text-sm bg-stone-800 text-white rounded-lg">55</span>
             </div>
         </div>
-        <div class="mt-5 relative overflow-auto">
-            <form action="#" class="flex flex-wrap gap-4 justify-center items-center" on-submit="">
-                <div>
+        <div class="pt-5 w-full">
+            <form method="post" class="flex flex-col gap-4 w-full">
+                <div class="w-full flex flex-col md:flex-row md:items-center justify-center gap-5">
                     <input type="text" placeholder="نام"
-                        class="px-3 py-2 rounded-lg outline-none bg-gray-600 text-gray-200 hover:placeholder:text-gray-100 duration-500 focus:ring-2 focus:ring-indigo-500 w-60 text-base font-medium">
-                </div>
-                <div>
+                        class="w-full lg:w-1/3 px-3 py-3 rounded outline-none bg-gray-600 text-gray-200 hover:placeholder:text-gray-100 duration-500 focus:ring-2 focus:ring-indigo-500 text-base font-medium">
                     <input type="email" placeholder="ایمیل"
-                        class="px-3 py-2 rounded-lg outline-none bg-gray-600 text-gray-200 hover:placeholder:text-gray-100 duration-500 focus:ring-2 focus:ring-indigo-500 w-60 text-base font-medium">
+                        class="w-full lg:w-1/3 px-3 py-3 rounded outline-none bg-gray-600 text-gray-200 hover:placeholder:text-gray-100 duration-500 focus:ring-2 focus:ring-indigo-500 text-base font-medium">
                 </div>
-                <div>
+                <div class="w-full flex md:items-center justify-center">
                     <textarea name="object"
-                        class="bg-gray-600 rounded-md w-72 resize-none outline-none px-2 text-gray-200 hover:text-gray-100 focus:resize-y focus:ring-2 focus:ring-indigo-500 duration-500"> موضوع</textarea>
+                        class="w-full lg:w-1/2 bg-gray-600 rounded resize-none outline-none px-2 py-2 text-gray-200 hover:text-gray-100 focus:resize-y focus:ring-2 focus:ring-indigo-500 duration-500"> موضوع</textarea>
                 </div>
-                <div>
-                    <button
-                        class="px-3 py-2 w-20 rounded-md text-white text-base hover:focus:bg-pink-600 duration-500">ارسال</button>
+                <div class="w-full flex items-center justify-center">
+                    <button class="px-5 py-3 bg-sky-600 outline-none rounded text-white transition-all duration-500">ارسال</button>
                 </div>
             </form>
         </div>
