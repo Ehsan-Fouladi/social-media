@@ -175,7 +175,7 @@ function ScrollPosition() {
                 <!-- box -->
                 <div class="flex items-center sm:mr-1 lg:mr-3 xl:mr-0">
                     <div class="bg-blue-700 px-3 py-2 relative rounded-lg block">
-                        <NuxtLink to="/auth/login" class="text-white font-normal text-sm text-center text-nowrap">
+                        <NuxtLink to="/auth" class="text-white font-normal text-sm text-center text-nowrap">
                           ورود / ثبت نام
                         </NuxtLink>
                     </div>
@@ -223,7 +223,7 @@ function ScrollPosition() {
             </div>
             <!-- login -->
             <div class="flex items-center bg-gray-800 px-2 py-1 rounded-lg">
-            <NuxtLink to="/auth/login">
+            <NuxtLink to="/auth">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-7 text-white">
                     <path stroke-linecap="round" stroke-linejoin="round"
