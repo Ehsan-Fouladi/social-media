@@ -26,7 +26,7 @@
           <div class="border-2 border-white px-2 py-0 rounded-md text-center mr-1">
             <span class="font-medium text-white text-xs">8</span>
           </div>
-          <NuxtLink to="/productlist/" class="border-2 border-white px-2 py-0 rounded-md text-center mr-1">
+          <NuxtLink to="/productlist" class="border-2 border-white px-2 py-0 rounded-md text-center mr-1">
             <span class="font-medium text-white text-base capitalize">Amazon</span>
           </NuxtLink>
         </div>

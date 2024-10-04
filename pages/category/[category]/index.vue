@@ -4,9 +4,7 @@
     </div>
 </template>
 <script setup>
-import { onMounted } from 'vue';
-
-const category = ref('')
+const category = ref('video')
 
 onMounted(() => {
     category.value = useRoute().params.category

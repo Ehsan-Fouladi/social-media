@@ -48,11 +48,11 @@
 <script setup>
 const data = ref([
   {
-    image: "/image/background1.jpg",
+    image: "/social-media/image/background1.jpg",
     name: "background1"
   },
   {
-    image: "/image/background2.jpg",
+    image: "/social-media/image/background2.jpg",
     name: "background2"
   },
 ])
